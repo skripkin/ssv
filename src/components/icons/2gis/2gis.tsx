@@ -1,4 +1,5 @@
 import React from "react";
+import { IconSvg } from "../styles"
 
 interface IIconProp {
   className?: string;
@@ -7,7 +8,7 @@ interface IIconProp {
 
 const Gis2 = ({ className, props }: IIconProp) => {
   return (
-    <svg
+    <IconSvg
       className={className}
       clip-rule="evenodd"
       fill-rule="evenodd"
@@ -30,7 +31,7 @@ const Gis2 = ({ className, props }: IIconProp) => {
           fill="#434242"
         />
       </g>
-    </svg>
+    </IconSvg>
   );
 };
 

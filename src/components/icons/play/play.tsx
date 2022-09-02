@@ -1,4 +1,6 @@
 import React from "react";
+import { IconSvg } from "../styles"
+
 
 interface IIconProp {
   className?: string;
@@ -7,7 +9,7 @@ interface IIconProp {
 
 const Play = ({ className, props }: IIconProp) => {
   return (
-    <svg
+    <IconSvg
       width="14"
       height="16"
       viewBox="0 0 14 16"
@@ -20,7 +22,7 @@ const Play = ({ className, props }: IIconProp) => {
         d="M13.3213 8.13039L0.702209 0.844757L0.702209 15.416L13.3213 8.13039Z"
         fill="black"
       />
-    </svg>
+    </IconSvg>
   );
 };
 
