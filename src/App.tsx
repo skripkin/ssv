@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <div style={{ margin: 25 }}>
-        <Button title="Test button title" onClick={() => null} />
+        <Button title="Подробнее" onClick={() => null} />
       </div>
 
         colors.black
