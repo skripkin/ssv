@@ -1,14 +1,18 @@
 import React from "react";
-import { Button } from "./components";
+import { Button, Contacts } from "./components";
 import {colors} from "./constants";
+
 
 function App() {
   return (
     <div>
       <div style={{ margin: 25 }}>
-        <Button title="Test button title" onClick={() => null} />
+        <Button title="Test button title" title2="12345" onClick={() => null} />
       </div>
-
+      <div style={{ margin: 25 }}>
+        {/* <Contacts title="Test button title" subTitle="12345" icon={  } /> */}
+      </div>
+      
         colors.black
       <div style={{ width: 250, height: 25, backgroundColor: colors.black }} />
         colors.white
