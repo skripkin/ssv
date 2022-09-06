@@ -1,9 +1,9 @@
-import React, { ReactFragment } from "react";
-import { Container } from './style'
+import React from "react";
+import { Container, Title, SubTitle, Icon } from './style'
 
 
 interface IContactsProp {
-  icon: ReactFragment;
+  icon: React.ReactNode;
   title: string;
   subTitle: string;
 }
@@ -11,10 +11,10 @@ interface IContactsProp {
 const Contacts = ({ icon, title, subTitle }: IContactsProp) => {
   return (
     <Container>
-      <div> {icon} </div>
+      <Icon>{icon}</Icon>
       <div>
-        {title}
-        {subTitle}
+        <Title>{title}</Title>
+        <SubTitle>{subTitle}</SubTitle>
       </div>
     </Container>
   );
