@@ -9,3 +9,4 @@ export const vermilion = '#FC4710';
 export const internationalOrange = '#FE5313';
 export const greenPea = '#236E45';
 export const monza = '#D30011';
+export const tiaMaria = '#C8510E';

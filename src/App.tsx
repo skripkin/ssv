@@ -76,6 +76,8 @@ function App() {
       <div style={{ width: 250, height: 25, backgroundColor: colors.broom }} />
       colors.alto
       <div style={{ width: 250, height: 25, backgroundColor: colors.alto }} />
+      colors.tiaMaria
+      <div style={{ width: 250, height: 25, backgroundColor: colors.tiaMaria }} />
       colors.vermilion
       <div
         style={{ width: 250, height: 25, backgroundColor: colors.vermilion }}
@@ -95,6 +97,7 @@ function App() {
       colors.monza
       <div style={{ width: 250, height: 25, backgroundColor: colors.monza }} />
     </div>
+    
   );
 }
 
