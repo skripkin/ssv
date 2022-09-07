@@ -1,12 +1,18 @@
 import React from "react";
-import { Button, Icon } from "./components";
+import { Button, Contacts, Icon, UsAdvantages } from "./components";
 import { colors } from "./constants";
 
 function App() {
   return (
     <div>
       <div style={{ margin: 25 }}>
-        <Button title="Test button title" onClick={() => null} />
+        <Button title="Подробнее" onClick={() => null} />
+      </div>
+      <div style={{ margin: 10 }}>
+        <Contacts title="11111111" subTitle="12345" icon={<Icon.Phone />} />
+      </div>
+      <div style={{ margin: 10 }}>
+        <UsAdvantages title="777777" subTitle="8888888888" image="./png1.png" />
       </div>
       <div style={{ display: "flex", marginBottom: 24 }}>
         <div>
@@ -77,7 +83,9 @@ function App() {
       colors.alto
       <div style={{ width: 250, height: 25, backgroundColor: colors.alto }} />
       colors.tiaMaria
-      <div style={{ width: 250, height: 25, backgroundColor: colors.tiaMaria }} />
+      <div
+        style={{ width: 250, height: 25, backgroundColor: colors.tiaMaria }}
+      />
       colors.vermilion
       <div
         style={{ width: 250, height: 25, backgroundColor: colors.vermilion }}
@@ -97,7 +105,6 @@ function App() {
       colors.monza
       <div style={{ width: 250, height: 25, backgroundColor: colors.monza }} />
     </div>
-    
   );
 }
 
