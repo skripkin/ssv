@@ -1,6 +1,7 @@
 import React from "react";
-import { Button, Icon } from "./components";
+import { Button, Contacts, Icon } from "./components";
 import { colors } from "./constants";
+
 
 function App() {
   return (
@@ -8,6 +9,11 @@ function App() {
       <div style={{ margin: 25 }}>
         <Button title="Подробнее" onClick={() => null} />
       </div>
+
+      <div style={{ margin: 10 }}>
+        <Contacts title="11111111" subTitle="12345" icon={<Icon.Phone />} />
+      </div>
+
       <div style={{ display: "flex", marginBottom: 24 }}>
         <div>
           " СТрелка "<Icon.Arrow />
@@ -55,6 +61,7 @@ function App() {
           " Correct " <Icon.Correct />{" "}
         </div>
       </div>
+
       colors.black
       <div style={{ width: 250, height: 25, backgroundColor: colors.black }} />
       colors.white
