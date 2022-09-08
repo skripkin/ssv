@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Contacts, Icon, UsAdvantages } from "./components";
+import { Button, Contacts, Icon, UsAdvantages, Review } from "./components";
 import { colors } from "./constants";
 
 function App() {
@@ -13,6 +13,15 @@ function App() {
       </div>
       <div style={{ margin: 10 }}>
         <UsAdvantages title="777777" subTitle="8888888888" image="./png1.png" />
+      </div>
+      <div style={{ margin: 10 }}>
+        <Review
+          onClick={() => null}
+          title="Венера"
+          subTitle="egrethbrdtgdgvrthvdrthvxg"
+          dataTime="08 september"
+          image="./image9.png"
+        />
       </div>
       <div style={{ display: "flex", marginBottom: 24 }}>
         <div>
