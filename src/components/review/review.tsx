@@ -7,11 +7,12 @@ interface IReviewProp {
   title: string;
   subTitle: string;
   dataTime: string;
-  onClick: () => void;
+  onClick: (innerRef: any) => void;
 
 }
 
 const Review = ({ image, title, subTitle, dataTime, onClick }: IReviewProp) => {
+  const imageRef = React.useRef(null);
   return (
     <Container>
       <div>
@@ -19,8 +20,8 @@ const Review = ({ image, title, subTitle, dataTime, onClick }: IReviewProp) => {
         <DataTime>{dataTime}</DataTime>
         <SubTitle>{subTitle}</SubTitle>
       </div>
-      <ImageWrapper>
-        <Ellipse onClick={onClick}><Play/></Ellipse>
+      <ImageWrapper ref={imageRef}>
+        <Ellipse onClick={() => onClick(imageRef)}><Play/></Ellipse>
         <Image src={image} alt="Alt" />
       </ImageWrapper>
     </Container>

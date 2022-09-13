@@ -16,7 +16,7 @@ function App() {
       </div>
       <div style={{ margin: 10 }}>
         <Review
-          onClick={() => null}
+          onClick={(element: any) => console.log(element)}
           title="Венера"
           subTitle="egrethbrdtgdgvrthvdrthvxg"
           dataTime="08 september"
