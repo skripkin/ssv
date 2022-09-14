@@ -1,10 +1,8 @@
 import React from "react";
-import { Button, Contacts, Icon, Step } from "./components";
+import { Button, Contacts, Icon, Step, UsAdvantages } from "./components";
 import { colors } from "./constants";
 
-
-
-function App(): JSX.Element {
+function App() {
   return (
     <div>
       <div style={{ margin: 25 }}>
@@ -19,7 +17,9 @@ function App(): JSX.Element {
       <div style={{ margin: 10 }}>
         <Contacts title="11111111" subTitle="12345" icon={<Icon.Phone />} />
       </div>
-
+      <div style={{ margin: 10 }}>
+        <UsAdvantages title="777777" subTitle="8888888888" image="./png1.png" />
+      </div>
       <div style={{ display: "flex", marginBottom: 24 }}>
         <div>
           " СТрелка "<Icon.Arrow />
@@ -67,7 +67,6 @@ function App(): JSX.Element {
           " Correct " <Icon.Correct />{" "}
         </div>
       </div>
-
       colors.black
       <div style={{ width: 250, height: 25, backgroundColor: colors.black }} />
       colors.white
@@ -89,6 +88,10 @@ function App(): JSX.Element {
       <div style={{ width: 250, height: 25, backgroundColor: colors.broom }} />
       colors.alto
       <div style={{ width: 250, height: 25, backgroundColor: colors.alto }} />
+      colors.tiaMaria
+      <div
+        style={{ width: 250, height: 25, backgroundColor: colors.tiaMaria }}
+      />
       colors.vermilion
       <div
         style={{ width: 250, height: 25, backgroundColor: colors.vermilion }}
