@@ -4,11 +4,12 @@ import { Container } from './styles';
 interface IButtonProp {
   title: string;
   onClick: () => void;
+  className?: string;
 }
 
-const Button = ({ title, onClick }: IButtonProp) => {
+const Button = ({ title, onClick, className }: IButtonProp) => {
   return(
-    <Container onClick={onClick}>
+    <Container onClick={onClick} className={className}>
       {title}
     </Container>
   )

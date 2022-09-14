@@ -1,14 +1,20 @@
 import React from "react";
-import { Button, Contacts, Icon } from "./components";
+import { Button, Contacts, Icon, Step } from "./components";
 import { colors } from "./constants";
 
 
-function App() {
+
+function App(): JSX.Element {
   return (
     <div>
       <div style={{ margin: 25 }}>
-        <Button title="Подробнее" onClick={() => null} />
+        <Button title="Подробнее" onClick={() => null}/>
       </div>
+
+      <div style={{ margin: 30 }}>
+        <Step title="Шаг 1" subTitle="определить уровень" onClick={() => null}/>
+      </div>
+
 
       <div style={{ margin: 10 }}>
         <Contacts title="11111111" subTitle="12345" icon={<Icon.Phone />} />
