@@ -10,8 +10,6 @@ export const Image = styled.img`
 `
 
 export const Title = styled.p`
-    margin: 0;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -21,8 +19,6 @@ export const Title = styled.p`
 `;
 
 export const SubTitle = styled.p`
-    margin: 0;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
