@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Title, SubTitle, Icon } from './style'
 
 
-interface IContactsProp {
+export interface IContactsProp {
   icon: React.ReactNode;
   title: string;
   subTitle: string;
