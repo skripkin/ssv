@@ -9,11 +9,9 @@ interface IDivProp {
 const Div = ({ title, subTitle, onClick }: IDivProp) => {
     return(
      <Container> 
-            <div>
-                <Title>{title}</Title>
-                <SubTitle>{subTitle}</SubTitle>
-                <StepButton title="Подробнее" onClick={onClick}/>
-            </div>
+        <Title>{title}</Title>
+        <SubTitle>{subTitle}</SubTitle>
+        <StepButton title="Подробнее" onClick={onClick}/>
       </Container>
     );
   };

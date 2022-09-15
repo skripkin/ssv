@@ -1,9 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
-import { Button, Contacts, Icon, Step, UsAdvantages } from "./components";
-=======
-import { Button, Contacts, Icon, UsAdvantages, Review } from "./components";
->>>>>>> 56ecb240e210093deaf5b059f9762024ac915b07
+import { Button, Contacts, Icon, Step, UsAdvantages, Review  } from "./components";
 import { colors } from "./constants";
 
 function App() {
