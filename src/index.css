@@ -12,3 +12,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+p {
+  margin: unset;
+  padding: unset;
+}
+
+button {
+  padding: unset;
+  margin: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+img {
+  margin: unset;
+  padding: unset;
+  display: block;
+}
+
+input {
+  margin: unset;
+  padding: unset;
+  border: unset;
+  background: unset;
+  outline: unset;
+}
+
+li {
+  list-style-type: none;
+  margin: unset;
+  padding: unset;
+}
