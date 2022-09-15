@@ -1,13 +1,19 @@
 import React from "react";
-import { Button, Contacts, Icon, UsAdvantages, Review } from "./components";
+import { Button, Contacts, Icon, Step, UsAdvantages, Review  } from "./components";
 import { colors } from "./constants";
 
 function App() {
   return (
     <div>
       <div style={{ margin: 25 }}>
-        <Button title="Подробнее" onClick={() => null} />
+        <Button title="Подробнее" onClick={() => null}/>
       </div>
+
+      <div style={{ margin: 30 }}>
+        <Step title="Шаг 1" subTitle="определить уровень" onClick={() => null}/>
+      </div>
+
+
       <div style={{ margin: 10 }}>
         <Contacts title="11111111" subTitle="12345" icon={<Icon.Phone />} />
       </div>
