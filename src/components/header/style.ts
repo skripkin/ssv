@@ -7,6 +7,8 @@ justify-content: space-around;
 `;
 
 export const Image = styled.img`
+width: 267px;
+height: 67px;
 `;
 
 export const Components = styled.div`
