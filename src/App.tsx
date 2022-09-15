@@ -1,16 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
-import {
-  Button,
-  Contacts,
-  Icon,
-  UsAdvantages,
-  Review,
-  Header,
-} from "./components";
-=======
-import { Button, Contacts, Icon, Step, UsAdvantages, Review  } from "./components";
->>>>>>> caf2a99bc732be8fa234b62565b9b99bf6c99bef
+import { Button, Contacts, Icon, Step, UsAdvantages, Review, Header } from "./components";
 import { colors } from "./constants";
 
 const CONTACTS_ITEMS = [
