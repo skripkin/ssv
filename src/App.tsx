@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import {
   Button,
   Contacts,
@@ -7,6 +8,9 @@ import {
   Review,
   Header,
 } from "./components";
+=======
+import { Button, Contacts, Icon, Step, UsAdvantages, Review  } from "./components";
+>>>>>>> caf2a99bc732be8fa234b62565b9b99bf6c99bef
 import { colors } from "./constants";
 
 const CONTACTS_ITEMS = [
@@ -34,8 +38,14 @@ function App() {
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
       </div>
       <div style={{ margin: 25 }}>
-        <Button title="Подробнее" onClick={() => null} />
+        <Button title="Подробнее" onClick={() => null}/>
       </div>
+
+      <div style={{ margin: 30 }}>
+        <Step title="Шаг 1" subTitle="определить уровень" onClick={() => null}/>
+      </div>
+
+
       <div style={{ margin: 10 }}>
         <Contacts title="11111111" subTitle="12345" icon={<Icon.Phone />} />
       </div>
@@ -142,6 +152,7 @@ function App() {
       colors.monza
       <div style={{ width: 250, height: 25, backgroundColor: colors.monza }} />
     </div>
+
   );
 }
 
