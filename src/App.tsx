@@ -1,10 +1,31 @@
 import React from "react";
-import { Button, Contacts, Icon, Step, UsAdvantages, Review  } from "./components";
+import { Button, Contacts, Icon, Step, UsAdvantages, Review, Header } from "./components";
 import { colors } from "./constants";
+
+const CONTACTS_ITEMS = [
+  {
+    icon: <Icon.Phone />,
+    title: "Some title",
+    subTitle: "Some subtitle",
+  },
+  {
+    icon: <Icon.Location />,
+    title: "Some title",
+    subTitle: "Some subtitle",
+  },
+  {
+    icon: <Icon.Time />,
+    title: "Some title",
+    subTitle: "Some subtitle",
+  },
+];
 
 function App() {
   return (
     <div>
+      <div style={{background: "lightgray", margin: 25}}>
+        <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
+      </div>
       <div style={{ margin: 25 }}>
         <Button title="Подробнее" onClick={() => null}/>
       </div>
