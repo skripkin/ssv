@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Contacts, Icon, Step, UsAdvantages, Review  } from "./components";
+import { Button, Contacts, Icon, Step, UsAdvantages, Review, Clouds  } from "./components";
 import { colors } from "./constants";
 
 function App() {
@@ -9,10 +9,14 @@ function App() {
         <Button title="Подробнее" onClick={() => null}/>
       </div>
 
+      <div>
+        <Clouds image="./cloud.png"/>
+      </div>
+
       <div style={{ margin: 30 }}>
         <Step title="Шаг 1" subTitle="определить уровень" onClick={() => null}/>
       </div>
-
+     
 
       <div style={{ margin: 10 }}>
         <Contacts title="11111111" subTitle="12345" icon={<Icon.Phone />} />
