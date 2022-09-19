@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import { colors } from "src/constants";
 
-
-export const Image = styled.img`
+export const CloudImage = styled.img`
   object-fit: cover;
   position: absolute; 
   background-repeat: no-repeat;
