@@ -1,14 +1,12 @@
 import React from "react";
-import { Container, Image } from './style';
+import { Image } from './style';
 
 interface ICloudsProp {
     image: string;
   }
   const Clouds = ({ image }: ICloudsProp) => {
     return (
-      <Container>
-       <Image src={image}  />
-      </Container>
+      <Image src={image}/>
     );
   };
   export default Clouds;
