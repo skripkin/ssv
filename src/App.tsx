@@ -1,9 +1,7 @@
 import React from "react";
+import { Button, Contacts, Icon, Step, UsAdvantages, Review, Header, CloudImage } from "./components";
+import { colors } from "./constants";
 
-import { Button, Contacts, Icon, Step, UsAdvantages, Review, Header } from "../../components";
-import { colors } from "../../constants";
-
-import { CloudImage } from './styles';
 
 const CONTACTS_ITEMS = [
   {
@@ -34,7 +32,7 @@ function App() {
       </div>
 
       <div>
-        <CloudImage src="./cloud.png" />
+        <CloudImage image="./cloud.png" />
       </div>
 
       <div style={{ margin: 30 }}>
