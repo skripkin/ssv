@@ -38,4 +38,4 @@ export const StepButton = styled(Button)`
   height: 83px;
   margin-top: 17px;
   margin-bottom: 43px;
-`
+`;

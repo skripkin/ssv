@@ -11,6 +11,7 @@ import {
 } from "./components";
 import { colors } from "./constants";
 
+
 const CONTACTS_ITEMS = [
   {
     icon: <Icon.Phone />,
