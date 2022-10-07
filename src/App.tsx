@@ -1,5 +1,14 @@
 import React from "react";
-import { Button, Contacts, Icon, Step, UsAdvantages, Review, Header } from "./components";
+import {
+  Button,
+  Contacts,
+  Icon,
+  Step,
+  UsAdvantages,
+  Review,
+  Header,
+  UsMapContacts,
+} from "./components";
 import { colors } from "./constants";
 
 const CONTACTS_ITEMS = [
@@ -20,21 +29,43 @@ const CONTACTS_ITEMS = [
   },
 ];
 
-function App() {
+const USCONTACTS_ITEMS = [
+  {
+    icon: <Icon.Phone />,
+    title: "+77252318732",
+    subTitle: "+77053715041",
+  },
+  {
+    icon: <Icon.Location />,
+    title: "г. Шымкент",
+    subTitle: "ул. Чехова 7",
+  },
+  {
+    icon: <Icon.Time />,
+    title: "с 9-00 до 18-00",
+    subTitle: "(суббота, воскресенье выходной)",
+  },
+];
+
+const App = () => {
   return (
     <div>
-      <div style={{background: "lightgray", margin: 25}}>
+      <div style={{ background: "lightgray", margin: 25 }}>
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
       </div>
       <div style={{ margin: 25 }}>
-        <Button title="Подробнее" onClick={() => null}/>
+        <UsMapContacts contacts={USCONTACTS_ITEMS} onClick={() => null} title="Наши контакты" findUsButtonTitle="Задайте вопрос" contactUsButtonTitle="Найти нас здесь" />
       </div>
-
+      <div style={{ margin: 25 }}>
+        <Button title="Подробнее" onClick={() => null} />
+      </div>
       <div style={{ margin: 30 }}>
-        <Step title="Шаг 1" subTitle="определить уровень" onClick={() => null}/>
+        <Step
+          title="Шаг 1"
+          subTitle="определить уровень"
+          onClick={() => null}
+        />
       </div>
-
-
       <div style={{ margin: 10 }}>
         <Contacts title="11111111" subTitle="12345" icon={<Icon.Phone />} />
       </div>
@@ -141,7 +172,6 @@ function App() {
       colors.monza
       <div style={{ width: 250, height: 25, backgroundColor: colors.monza }} />
     </div>
-
   );
 }
 
