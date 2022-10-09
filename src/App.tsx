@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Contacts, Icon, Step, UsAdvantages, Review, Header, CloudImage } from "./components";
+import { Button, Contacts, Icon, Step, UsAdvantages, Review, Header, CloudImage, HeaderBackground } from "./components";
 import { colors } from "./constants";
 
 
@@ -24,6 +24,9 @@ const CONTACTS_ITEMS = [
 function App() {
   return (
     <div>
+      <div>
+        <HeaderBackground image=""/>
+      </div>
       <div style={{background: "lightgray", margin: 25}}>
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
       </div>
