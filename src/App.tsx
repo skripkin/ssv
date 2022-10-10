@@ -1,6 +1,7 @@
 import React from "react";
-import { Button, Contacts, Icon, Step, UsAdvantages, Review, Header, AboutUs} from "./components";
+import { Button, Contacts, Icon, Step, UsAdvantages, Review, Header,CloudImage, AboutUs} from "./components";
 import { colors } from "./constants";
+
 
 const CONTACTS_ITEMS = [
   {
@@ -71,10 +72,14 @@ function App() {
         <Button title="Подробнее" onClick={() => null}/>
       </div>
 
+      <div>
+        <CloudImage image="./cloud.png" />
+      </div>
+
       <div style={{ margin: 30 }}>
         <Step title="Шаг 1" subTitle="определить уровень" onClick={() => null}/>
       </div>
-
+     
 
       <div style={{ margin: 10 }}>
         <Contacts title="11111111" subTitle="12345" icon={<Icon.Phone />} />
