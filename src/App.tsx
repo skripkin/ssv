@@ -1,6 +1,20 @@
 import React from "react";
-import { Button, Contacts, Icon, Step, UsAdvantages, Review, Header } from "./components";
+import { 
+  Button, 
+  Contacts, 
+  Icon, 
+  Step, 
+  UsAdvantages, 
+  Review, 
+  Header,
+  Slider
+} from "./components";
 import { colors } from "./constants";
+import "swiper/css";
+import "./components/slider/styles.css";
+import "swiper/css/navigation";
+
+
 
 const CONTACTS_ITEMS = [
   {
@@ -22,7 +36,38 @@ const CONTACTS_ITEMS = [
 
 function App() {
   return (
+    
     <div>
+      <>
+      <div style={{ width: 1000}}>
+        <Slider/>
+        {/* <Slider className = "MySWiper" 
+          navigation={true} 
+          modules={[Navigation]}
+          onClick={(element: any) => console.log(element)}
+        >
+          <SwiperSlide>
+            <Review
+              onClick={(element: any) => console.log(element)}
+              title="Венера"
+              subTitle="Спасибо"
+              dataTime="08 september"
+              image="./image9.png"
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Review
+              onClick={(element: any) => console.log(element)}
+              title="Венера"
+              subTitle="subTitle"
+              dataTime="08 september"
+              image="./image9.png"
+            />
+          </SwiperSlide>
+          </Slider> */}
+      </div>
+      </>
       <div style={{background: "lightgray", margin: 25}}>
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
       </div>
@@ -45,11 +90,12 @@ function App() {
         <Review
           onClick={(element: any) => console.log(element)}
           title="Венера"
-          subTitle="egrethbrdtgdgvrthvdrthvxg"
+          subTitle="subTitle"
           dataTime="08 september"
           image="./image9.png"
         />
       </div>
+
       <div style={{ display: "flex", marginBottom: 24 }}>
         <div>
           " СТрелка "<Icon.Arrow />
