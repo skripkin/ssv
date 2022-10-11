@@ -73,7 +73,7 @@ export const RoundButton = styled.button`
 
   & > svg {
     padding: 18px 24px;
-    margin-right: 55px;
+    margin: 20px;
     width: 13px;
     heigth: 13px;
     box-shadow: 0px 2px 2px ${colors.tiaMaria};
