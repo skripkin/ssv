@@ -20,7 +20,7 @@ export const H1 = styled.h1`
 `;
 
 export const Text = styled.div`
-  margin: 16px 166px;
+  margin: 24px;
   font-weight: 400;
   font-size: 18px;
   width: 40%;
@@ -42,7 +42,7 @@ export const ApplicationButton = styled(Button)`
   display: flex;
   text-transform: none;
   padding: 0px 8px 0px;
-  margin: 0px 166px;
+  margin: 24px;
   width: 50%;
   height: 70px;
   font-weight: 400;
