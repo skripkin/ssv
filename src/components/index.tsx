@@ -5,4 +5,5 @@ export { default as UsAdvantages } from "./usAdvantages";
 export { default as Review } from "./review";
 export { default as Header } from "./header";
 export { default as Application } from "./application";
+export { default as CloudImage } from "./cloudImage";
 export * as Icon from "./icons";
