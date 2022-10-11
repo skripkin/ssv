@@ -1,5 +1,4 @@
 import React from "react";
-
 import { 
   Button, 
   Contacts, 
@@ -9,9 +8,9 @@ import {
   Review, 
   Header, 
   Application, 
-  CloudImage
+  CloudImage,
+  AboutUs
 } from "./components";
-
 import { colors } from "./constants";
 
 
@@ -33,6 +32,44 @@ const CONTACTS_ITEMS = [
   },
 ];
 
+const USADVANTAGES_ITEMS = [
+  {
+    image: "./png1.png",
+    title: "МАТЕРИАЛ",
+    subTitle: `Излагается
+простым
+и понятным языком`,
+  },
+  {
+    image: "./png1.png",
+    title: "ТЕХНОЛОГИИ",
+    subTitle: `В обучении 
+исползуются
+передовые технологии`,
+  },
+  {
+    image: "./png1.png",
+    title: "ОБУЧЕНИЕ",
+    subTitle: `В группах
+не более
+12 человек`,
+  },
+  {
+    image: "./png1.png",
+    title: "ПРЕДОСТАВЛЯЮТСЯ",
+    subTitle: `Готовые
+методические
+пособия`,
+  },
+  {
+    image: "./png1.png",
+    title: "ПРАКТИКА",
+    subTitle: `Полученые знания
+закрепляются
+на практике`,
+  }, 
+]
+
 function App() {
   return (
     <div>
@@ -52,6 +89,10 @@ function App() {
 
           onClick={() => null}
         />
+      </div>
+
+      <div style={{margin: 10}}>
+        <AboutUs usAdvantages={USADVANTAGES_ITEMS} />
       </div>
 
       <div style={{ margin: 25 }}>
