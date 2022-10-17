@@ -1,5 +1,16 @@
 import React from "react";
-import { Button, Contacts, Icon, Step, UsAdvantages, Review, Header,CloudImage, AboutUs} from "./components";
+import { 
+  Button, 
+  Contacts, 
+  Icon, 
+  Step, 
+  UsAdvantages, 
+  Review, 
+  Header, 
+  Application, 
+  CloudImage,
+  AboutUs
+} from "./components";
 import { colors } from "./constants";
 
 
@@ -65,9 +76,25 @@ function App() {
       <div style={{background: "lightgray", margin: 25}}>
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
       </div>
+
+      <div style={{ margin: 30 }}>
+        <Application 
+          h1="Проект “Английский центр”" 
+          text="Обучение английскому языку
+          на высоком уровне качества через курсы, разговорные клубы,
+          ресурсный центр
+          и общение с носителями
+          английского языка"
+          image ="./phone.png"
+
+          onClick={() => null}
+        />
+      </div>
+
       <div style={{margin: 10}}>
         <AboutUs usAdvantages={USADVANTAGES_ITEMS} />
       </div>
+
       <div style={{ margin: 25 }}>
         <Button title="Подробнее" onClick={() => null}/>
       </div>
@@ -79,7 +106,6 @@ function App() {
       <div style={{ margin: 30 }}>
         <Step title="Шаг 1" subTitle="определить уровень" onClick={() => null}/>
       </div>
-     
 
       <div style={{ margin: 10 }}>
         <Contacts title="11111111" subTitle="12345" icon={<Icon.Phone />} />
