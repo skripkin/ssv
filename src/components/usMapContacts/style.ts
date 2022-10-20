@@ -1,14 +1,13 @@
 import styled from "styled-components";
 import * as Icon from "../icons";
+import { colors } from "src/constants";
 
 export const Container = styled.div`
-  width: 401.46px;
-  height: 501.59px;
-  left: 1135.94px;
-  top: 3726.49px;
+  width: 400px;
+  height: 500px;
   padding-top: 20px;
 
-  background: #ffffff;
+  background: ${colors.white};
   box-shadow: 4px -4px 10px rgba(0, 0, 0, 0.5);
 `;
 
@@ -27,7 +26,7 @@ export const Contact = styled.div`
   height: 50px;
   padding-bottom: 30px;
 
-  color: #000000;
+  color: ${colors.black};
 
   & .us-map-contact-title {
     font-family: "Roboto";
@@ -35,7 +34,7 @@ export const Contact = styled.div`
     font-weight: 500;
     font-size: 20px;
     line-height: 21px;
-    color: #000000;
+    color: ${colors.black};
   }
 
   & .us-map-contact-subtitle {
@@ -44,7 +43,7 @@ export const Contact = styled.div`
     font-weight: 500;
     font-size: 20px;
     line-height: 21px;
-    color: #000000;
+    color: ${colors.black}
     width: 300px;
   }
 `;
@@ -52,27 +51,25 @@ export const Contact = styled.div`
 export const Button1 = styled.button`
   display: flex;
   align-items: center;
-  margin-left: 35px;
-  margin-top: 20px;
+  margin-left: 10%;
+  margin-top: 8%;
   padding: 12px 20px;
   height: 46px;
   width: 290px;
   border: 2px solid black;
   border-radius: 40px;
-  background-color: white;
+  background-color: ${colors.white};
 `;
 
 export const Button2 = styled.button`
   display: flex;
   align-items: center;
-  margin-left: 35px;
-  margin-top: 50px;
+  margin-left: 10%;
+  margin-top: 12%;
   padding: 12px 20px;
   width: 290px;
   height: 47px;
-  left: 1171px;
-  top: 4085.3px;
-  background: #fe5313;
+  background: ${colors.internationalOrange};
   border-radius: 53px;
 `;
 
@@ -85,7 +82,7 @@ export const Title = styled.p`
   font-weight: 700;
   font-size: 22px;
   line-height: 21px;
-  color: #000000;
+  color: ${colors.black};
   padding-bottom: 20px;
 `;
 
@@ -98,7 +95,7 @@ export const ContactUsButtonTitle = styled.p`
   font-weight: 500;
   font-size: 20px;
   line-height: 104.41%;
-  color: #000000;
+  color: ${colors.black};
 `;
 
 export const FindUsButtonTitle = styled.p`
@@ -110,7 +107,7 @@ export const FindUsButtonTitle = styled.p`
   font-weight: 500;
   font-size: 20px;
   line-height: 104.41%;
-  color: #000000;
+  color: ${colors.black};
 `;
 
 export const Arrow = styled(Icon.Arrow2)`
