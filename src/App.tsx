@@ -25,7 +25,7 @@ function App() {
   return (
     <div>
       <div>
-        <HeaderBackground image=""/>
+        <HeaderBackground/>
       </div>
       <div style={{background: "lightgray", margin: 25}}>
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />

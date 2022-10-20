@@ -1,11 +1,9 @@
 import React from "react";
 import {Container,Gradient, Tanya, Leftlist, RightList, LeftListYellow, RightListYellow} from "./style";
 
-interface IHeaderBackgroundProps {
-    image: string;
-}
+interface IHeaderBackgroundProps {}
 
-const HeaderBackground = ({ image }: IHeaderBackgroundProps) => {
+const HeaderBackground = ({}: IHeaderBackgroundProps) => {
     return(
         <Container>
             <Gradient/>
