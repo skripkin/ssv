@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Title, SubTitle, Image } from './style'
 
 
-interface IUsAdvantagesProp {
+export interface IUsAdvantagesProp {
   image: string;
   title: string;
   subTitle: string;
