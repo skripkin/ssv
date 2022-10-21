@@ -6,9 +6,10 @@ import {
   Step, 
   UsAdvantages, 
   Review, 
-  Header, 
-  Application, 
+  Header,
   CloudImage,
+  Slider,
+  Application, 
   AboutUs
 } from "./components";
 import { colors } from "./constants";
@@ -72,7 +73,12 @@ const USADVANTAGES_ITEMS = [
 
 function App() {
   return (
+    
     <div>
+      <div style={{ width: 1000}}>
+        <Slider/>
+      </div>
+      
       <div style={{background: "lightgray", margin: 25}}>
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
       </div>
@@ -117,11 +123,12 @@ function App() {
         <Review
           onClick={(element: any) => console.log(element)}
           title="Венера"
-          subTitle="egrethbrdtgdgvrthvdrthvxg"
+          subTitle="subTitle"
           dataTime="08 september"
           image="./image9.png"
         />
       </div>
+
       <div style={{ display: "flex", marginBottom: 24 }}>
         <div>
           " СТрелка "<Icon.Arrow />
