@@ -1,16 +1,18 @@
 import React from "react";
-import {
-  Button,
-  Contacts,
-  Icon,
-  Step,
-  AboutUs,
-  Application,
-  UsAdvantages,
-  Review,
+import { 
+  Button, 
+  Contacts, 
+  Icon, 
+  Step, 
+  UsAdvantages, 
+  Review, 
   Header,
   CloudImage,
+  HeaderBackground,
+  Slider,
+  Application,
   CenterImage,
+  AboutUs
 } from "./components";
 import { colors } from "./constants";
 
@@ -72,6 +74,7 @@ const USADVANTAGES_ITEMS = [
 
 function App() {
   return (
+    
     <div>
       <div>
         <CenterImage
@@ -79,7 +82,14 @@ function App() {
           subTitle="Обучение английскому языку на высоком уровне качества через курсы, разговорные клубы, ресурсный центр и общение с носителями английского языка"
         />
       </div>
-      <div style={{ background: "lightgray", margin: 25 }}>
+      <div>
+        <HeaderBackground />
+      </div>
+      <div style={{ width: 1000}}>
+        <Slider/>
+      </div>
+      
+      <div style={{background: "lightgray", margin: 25}}>
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
       </div>
       <div style={{ margin: 30 }}>
@@ -120,11 +130,12 @@ function App() {
         <Review
           onClick={(element: any) => console.log(element)}
           title="Венера"
-          subTitle="egrethbrdtgdgvrthvdrthvxg"
+          subTitle="subTitle"
           dataTime="08 september"
           image="./image9.png"
         />
       </div>
+
       <div style={{ display: "flex", marginBottom: 24 }}>
         <div>
           " СТрелка "<Icon.Arrow />
