@@ -18,11 +18,12 @@ export const Title = styled.p`
     color: ${colors.black};
 `;
 
-export const SubTitle = styled.p`
+export const SubTitle = styled.div`
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
+    white-space: pre;
     color: ${colors.black};
     `;

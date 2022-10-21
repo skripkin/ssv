@@ -54,6 +54,25 @@ const App = () => {
       <div style={{ background: "lightgray", margin: 25 }}>
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
       </div>
+
+      <div style={{ margin: 30 }}>
+        <Application 
+          h1="Проект “Английский центр”" 
+          text="Обучение английскому языку
+          на высоком уровне качества через курсы, разговорные клубы,
+          ресурсный центр
+          и общение с носителями
+          английского языка"
+          image ="./phone.png"
+
+          onClick={() => null}
+        />
+      </div>
+
+      <div style={{margin: 10}}>
+        <AboutUs usAdvantages={USADVANTAGES_ITEMS} />
+      </div>
+
       <div style={{ margin: 25 }}>
         <UsMapContacts contacts={USCONTACTS_ITEMS} onClick={() => null} title="Наши контакты" findUsButtonTitle="Задайте вопрос" contactUsButtonTitle="Найти нас здесь" />
       </div>
