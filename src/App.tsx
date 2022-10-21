@@ -10,7 +10,8 @@ import {
   CloudImage,
   HeaderBackground,
   Slider,
-  Application, 
+  Application,
+  CenterImage,
   AboutUs
 } from "./components";
 import { colors } from "./constants";
@@ -75,6 +76,12 @@ function App() {
   return (
     
     <div>
+      <div>
+        <CenterImage
+          title="О проекте <<Английский центр>>"
+          subTitle="Обучение английскому языку на высоком уровне качества через курсы, разговорные клубы, ресурсный центр и общение с носителями английского языка"
+        />
+      </div>
       <div>
         <HeaderBackground />
       </div>
