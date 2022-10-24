@@ -8,9 +8,18 @@ import {
   Review,
   Header,
   UsMapContacts,
+  AboutUs,
+  Application
 } from "./components";
 import { colors } from "./constants";
 
+const USADVANTAGES_ITEMS = [
+  {
+    image: "#",
+    title: "Some title",
+    subTitle: "Some subtitle",
+  },
+];
 
 const CONTACTS_ITEMS = [
   {

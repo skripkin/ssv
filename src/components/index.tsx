@@ -6,3 +6,7 @@ export { default as Review } from "./review";
 export { default as Header } from "./header";
 export { default as UsMapContacts } from "./usMapContacts";
 export * as Icon from "./icons";
+export { default as AboutUs } from "./aboutUs";
+export { default as Application } from "./application";
+
+
