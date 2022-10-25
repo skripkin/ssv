@@ -12,7 +12,8 @@ import {
   Slider,
   Application,
   CenterImage,
-  AboutUs
+  AboutUs,
+  SideButton
 } from "./components";
 import { colors } from "./constants";
 
@@ -76,6 +77,7 @@ function App() {
   return (
     
     <div>
+   
       <div>
         <CenterImage
           title="О проекте <<Английский центр>>"
@@ -88,7 +90,6 @@ function App() {
       <div style={{ width: 1000}}>
         <Slider/>
       </div>
-      
       <div style={{background: "lightgray", margin: 25}}>
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
       </div>
@@ -183,6 +184,9 @@ function App() {
           " Correct " <Icon.Correct />{" "}
         </div>
       </div>
+
+     
+
       colors.black
       <div style={{ width: 250, height: 25, backgroundColor: colors.black }} />
       colors.white
@@ -226,7 +230,12 @@ function App() {
       />
       colors.monza
       <div style={{ width: 250, height: 25, backgroundColor: colors.monza }} />
+
+      <div style={{ right: 10}}>
+        <SideButton title=" "/>
+      </div>
     </div>
+    
   );
 }
 
