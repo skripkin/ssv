@@ -232,7 +232,7 @@ function App() {
       <div style={{ width: 250, height: 25, backgroundColor: colors.monza }} />
 
       <div style={{ right: 10}}>
-        <SideButton title=" "/>
+        <SideButton title=" " step={{title: "Шаг 1",subTitle: "определить уровень", onClick:() => null}}/>
       </div>
     </div>
     

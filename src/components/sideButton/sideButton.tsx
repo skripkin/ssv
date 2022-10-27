@@ -5,9 +5,14 @@ import { ButtonSticky, Title } from './styles';
 
 interface ISideButtonProp{
   title: string;
+  step: {
+    title: string;
+    subTitle: string;
+    onClick: () => void;
+  }
 }
 
-const SideButton = ({title}: ISideButtonProp) => {
+const SideButton = ({ title, step }: ISideButtonProp) => {
   const [isShown, setIsShown] = useState(false);
 
   function handleClick(event: any) {
@@ -18,17 +23,12 @@ const SideButton = ({title}: ISideButtonProp) => {
     <div>
       <Title>{title}</Title>
       <ButtonSticky onClick={handleClick}>Click</ButtonSticky>
-      {isShown && <Box/>}
+      {isShown && <Step
+        title={step.title}
+        subTitle={step.subTitle}
+        onClick={step.onClick}
+      />}
     </div>
-  )
-}
-function Box(): JSX.Element {
-  return (
-    <Step
-      title="Шаг 1"
-      subTitle="определить уровень"
-      onClick={() => null}
-    />
   )
 }
 
