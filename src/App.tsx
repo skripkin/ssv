@@ -7,9 +7,13 @@ import {
   UsAdvantages,
   Review,
   Header,
+  CloudImage,
+  HeaderBackground,
+  Slider,
+  Application,
+  CenterImage,
   UsMapContacts,
   AboutUs,
-  Application
 } from "./components";
 import { colors } from "./constants";
 
@@ -60,33 +64,50 @@ const USCONTACTS_ITEMS = [
 const App = () => {
   return (
     <div>
+      <div>
+        <CenterImage
+          title="О проекте <<Английский центр>>"
+          subTitle="Обучение английскому языку на высоком уровне качества через курсы, разговорные клубы, ресурсный центр и общение с носителями английского языка"
+        />
+      </div>
+      <div>
+        <HeaderBackground />
+      </div>
+      <div style={{ width: 1000 }}>
+        <Slider />
+      </div>
       <div style={{ background: "lightgray", margin: 25 }}>
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
       </div>
-
       <div style={{ margin: 30 }}>
-        <Application 
-          h1="Проект “Английский центр”" 
+        <Application
+          h1="Проект “Английский центр”"
           text="Обучение английскому языку
           на высоком уровне качества через курсы, разговорные клубы,
           ресурсный центр
           и общение с носителями
           английского языка"
-          image ="./phone.png"
-
+          image="./phone.png"
           onClick={() => null}
         />
       </div>
-
-      <div style={{margin: 10}}>
+      <div style={{ margin: 10 }}>
         <AboutUs usAdvantages={USADVANTAGES_ITEMS} />
       </div>
-
       <div style={{ margin: 25 }}>
-        <UsMapContacts contacts={USCONTACTS_ITEMS} onClick={() => null} title="Наши контакты" findUsButtonTitle="Задайте вопрос" contactUsButtonTitle="Найти нас здесь" />
+        <UsMapContacts
+          contacts={USCONTACTS_ITEMS}
+          onClick={() => null}
+          title="Наши контакты"
+          findUsButtonTitle="Задайте вопрос"
+          contactUsButtonTitle="Найти нас здесь"
+        />
       </div>
       <div style={{ margin: 25 }}>
         <Button title="Подробнее" onClick={() => null} />
+      </div>
+      <div>
+        <CloudImage image="./cloud.png" />
       </div>
       <div style={{ margin: 30 }}>
         <Step
@@ -105,7 +126,7 @@ const App = () => {
         <Review
           onClick={(element: any) => console.log(element)}
           title="Венера"
-          subTitle="egrethbrdtgdgvrthvdrthvxg"
+          subTitle="subTitle"
           dataTime="08 september"
           image="./image9.png"
         />
@@ -202,6 +223,6 @@ const App = () => {
       <div style={{ width: 250, height: 25, backgroundColor: colors.monza }} />
     </div>
   );
-}
+};
 
 export default App;
