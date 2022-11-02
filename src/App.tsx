@@ -12,6 +12,7 @@ import {
   Slider,
   Application,
   CenterImage,
+  SideButton
   UsMapContacts,
   AboutUs,
 } from "./components";
@@ -64,6 +65,7 @@ const USCONTACTS_ITEMS = [
 const App = () => {
   return (
     <div>
+   
       <div>
         <CenterImage
           title="О проекте <<Английский центр>>"
@@ -178,6 +180,9 @@ const App = () => {
           " Correct " <Icon.Correct />{" "}
         </div>
       </div>
+
+     
+
       colors.black
       <div style={{ width: 250, height: 25, backgroundColor: colors.black }} />
       colors.white
@@ -221,7 +226,12 @@ const App = () => {
       />
       colors.monza
       <div style={{ width: 250, height: 25, backgroundColor: colors.monza }} />
+
+      <div style={{ right: 10}}>
+        <SideButton title=" " step={{title: "Шаг 1",subTitle: "определить уровень", onClick:() => null}}/>
+      </div>
     </div>
+    
   );
 };
 
