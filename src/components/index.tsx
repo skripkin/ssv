@@ -10,4 +10,8 @@ export { default as AboutUs } from "./aboutUs";
 export { default as CloudImage } from "./cloudImage";
 export { default as CenterImage } from "./centerImages";
 export { default as HeaderBackground } from "./headerBackground";
+export { default as UsMapContacts } from "./usMapContacts";
 export * as Icon from "./icons";
+
+
+
