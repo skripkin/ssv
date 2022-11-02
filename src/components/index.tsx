@@ -11,4 +11,8 @@ export { default as CloudImage } from "./cloudImage";
 export { default as CenterImage } from "./centerImages";
 export { default as HeaderBackground } from "./headerBackground";
 export { default as SideButton } from "./sideButton";
+export { default as UsMapContacts } from "./usMapContacts";
 export * as Icon from "./icons";
+
+
+

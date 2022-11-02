@@ -1,21 +1,30 @@
 import React from "react";
-import { 
-  Button, 
-  Contacts, 
-  Icon, 
-  Step, 
-  UsAdvantages, 
-  Review, 
+import {
+  Button,
+  Contacts,
+  Icon,
+  Step,
+  UsAdvantages,
+  Review,
   Header,
   CloudImage,
   HeaderBackground,
   Slider,
   Application,
   CenterImage,
-  AboutUs,
   SideButton
+  UsMapContacts,
+  AboutUs,
 } from "./components";
 import { colors } from "./constants";
+
+const USADVANTAGES_ITEMS = [
+  {
+    image: "#",
+    title: "Some title",
+    subTitle: "Some subtitle",
+  },
+];
 
 const CONTACTS_ITEMS = [
   {
@@ -35,47 +44,26 @@ const CONTACTS_ITEMS = [
   },
 ];
 
-const USADVANTAGES_ITEMS = [
+const USCONTACTS_ITEMS = [
   {
-    image: "./png1.png",
-    title: "МАТЕРИАЛ",
-    subTitle: `Излагается
-простым
-и понятным языком`,
+    icon: <Icon.Phone />,
+    title: "+77252318732",
+    subTitle: "+77053715041",
   },
   {
-    image: "./png1.png",
-    title: "ТЕХНОЛОГИИ",
-    subTitle: `В обучении 
-исползуются
-передовые технологии`,
+    icon: <Icon.Location />,
+    title: "г. Шымкент",
+    subTitle: "ул. Чехова 7",
   },
   {
-    image: "./png1.png",
-    title: "ОБУЧЕНИЕ",
-    subTitle: `В группах
-не более
-12 человек`,
-  },
-  {
-    image: "./png1.png",
-    title: "ПРЕДОСТАВЛЯЮТСЯ",
-    subTitle: `Готовые
-методические
-пособия`,
-  },
-  {
-    image: "./png1.png",
-    title: "ПРАКТИКА",
-    subTitle: `Полученые знания
-закрепляются
-на практике`,
+    icon: <Icon.Time />,
+    title: "с 9-00 до 18-00",
+    subTitle: "(суббота, воскресенье выходной)",
   },
 ];
 
-function App() {
+const App = () => {
   return (
-    
     <div>
    
       <div>
@@ -87,10 +75,10 @@ function App() {
       <div>
         <HeaderBackground />
       </div>
-      <div style={{ width: 1000}}>
-        <Slider/>
+      <div style={{ width: 1000 }}>
+        <Slider />
       </div>
-      <div style={{background: "lightgray", margin: 25}}>
+      <div style={{ background: "lightgray", margin: 25 }}>
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
       </div>
       <div style={{ margin: 30 }}>
@@ -107,6 +95,15 @@ function App() {
       </div>
       <div style={{ margin: 10 }}>
         <AboutUs usAdvantages={USADVANTAGES_ITEMS} />
+      </div>
+      <div style={{ margin: 25 }}>
+        <UsMapContacts
+          contacts={USCONTACTS_ITEMS}
+          onClick={() => null}
+          title="Наши контакты"
+          findUsButtonTitle="Задайте вопрос"
+          contactUsButtonTitle="Найти нас здесь"
+        />
       </div>
       <div style={{ margin: 25 }}>
         <Button title="Подробнее" onClick={() => null} />
@@ -136,7 +133,6 @@ function App() {
           image="./image9.png"
         />
       </div>
-
       <div style={{ display: "flex", marginBottom: 24 }}>
         <div>
           " СТрелка "<Icon.Arrow />
@@ -237,6 +233,6 @@ function App() {
     </div>
     
   );
-}
+};
 
 export default App;
