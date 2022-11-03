@@ -60,15 +60,11 @@
   }, 
   "lint-staged": { 
     "./**/*.{ts,tsx,js}": [ 
-      "eslint --fix", 
+      "npx eslint --ext ./**/*.{ts,tsx,js}", 
       "git add" 
     ], 
     "./**/*.{ts,tsx}": [ 
       "tsc-files -p ./tsconfig.json --noEmit" 
-    ], 
-    "./**/*.scss": [ 
-      "prettier --write", 
-      "git add" 
-    ] 
+    ]
   }
 }
