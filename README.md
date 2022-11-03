@@ -45,5 +45,8 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+## Lets install husky test's
+npx husky install && npx husky add .husky/pre-commit "npx lint-staged"
+
 Edit by design from Anton Fix
 https://www.figma.com/file/qjO3BdV5Y9H7gev9sIpCNe/Untitled?node-id=732%3A5
