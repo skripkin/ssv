@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Image } from './styles';
 
 interface ICloudImageProps {
@@ -6,7 +6,7 @@ interface ICloudImageProps {
 }
 
 const CloudImage = ({ image }: ICloudImageProps) => {
-  return <Image src={image} alt={"error"} />;
+  return <Image src={image} alt={'error'} />;
 };
 
 export default CloudImage;

@@ -1,1 +1,1 @@
-export { default } from "./watsapp1";
+export { default } from './watsapp1';

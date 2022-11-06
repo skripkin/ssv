@@ -1,1 +1,1 @@
-export { default } from "./arrow";
+export { default } from './arrow';

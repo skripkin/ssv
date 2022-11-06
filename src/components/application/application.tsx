@@ -1,6 +1,13 @@
-import React from "react";
-import {Container, H1, Image, Text, ApplicationButton, RoundButton} from "./style";
-import Play from "../icons/play/play"
+import React from 'react';
+import {
+  Container,
+  H1,
+  Image,
+  Text,
+  ApplicationButton,
+  RoundButton,
+} from './style';
+import Play from '../icons/play/play';
 
 interface IApplicationProp {
   image: string;
@@ -9,21 +16,18 @@ interface IApplicationProp {
   onClick: () => void;
 }
 
-const Application = ({ image, h1, text, onClick}: IApplicationProp) => {
-
+const Application = ({ image, h1, text, onClick }: IApplicationProp) => {
   return (
     <Container>
       <H1>{h1}</H1>
       <Text>{text}</Text>
-      <Image src={image} alt="Alt"/>
-      <ApplicationButton title="Оставить заявку" onClick={onClick}/>
+      <Image src={image} alt="Alt" />
+      <ApplicationButton title="Оставить заявку" onClick={onClick} />
       <RoundButton onClick={onClick}>
-        <Play/>
+        <Play />
         <div>
-          <p>
-            Посмотреть видео 
-          </p>          
-            1мин. 26 сек.
+          <p>Посмотреть видео </p>
+          1мин. 26 сек.
         </div>
       </RoundButton>
     </Container>

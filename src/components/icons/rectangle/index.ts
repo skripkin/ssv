@@ -1,1 +1,1 @@
-export { default } from "./rectangle";
+export { default } from './rectangle';

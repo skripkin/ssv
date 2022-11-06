@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import * as Icon from "../icons";
-import { colors } from "src/constants";
+import styled from 'styled-components';
+import * as Icon from '../icons';
+import { colors } from 'src/constants';
 
 export const Container = styled.div`
   width: 400px;
@@ -77,7 +77,7 @@ export const Title = styled.p`
   margin-left: 30px;
   width: 238.31px;
   height: 35.78px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -90,7 +90,7 @@ export const ContactUsButtonTitle = styled.p`
   height: 22px;
   width: 150px;
   margin-right: auto;
-  font-family: "Fasthand";
+  font-family: 'Fasthand';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -102,7 +102,7 @@ export const FindUsButtonTitle = styled.p`
   height: 22px;
   width: 150px;
   margin-right: auto;
-  font-family: "Fasthand";
+  font-family: 'Fasthand';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;

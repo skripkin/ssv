@@ -1,6 +1,5 @@
-import React from "react";
-import { Container, Title, SubTitle, Image } from './style'
-
+import React from 'react';
+import { Container, Title, SubTitle, Image } from './style';
 
 export interface IUsAdvantagesProp {
   image: string;

@@ -1,6 +1,14 @@
-import React from "react";
-import { Container, Title, SubTitle, DataTime, Image, ImageWrapper, Ellipse } from "./style";
-import Play from "../icons/play/play"
+import React from 'react';
+import {
+  Container,
+  Title,
+  SubTitle,
+  DataTime,
+  Image,
+  ImageWrapper,
+  Ellipse,
+} from './style';
+import Play from '../icons/play/play';
 
 interface IReviewProp {
   image: string;
@@ -8,7 +16,6 @@ interface IReviewProp {
   subTitle: string;
   dataTime: string;
   onClick: (innerRef: any) => void;
-
 }
 
 const Review = ({ image, title, subTitle, dataTime, onClick }: IReviewProp) => {
@@ -21,7 +28,9 @@ const Review = ({ image, title, subTitle, dataTime, onClick }: IReviewProp) => {
         <SubTitle>{subTitle}</SubTitle>
       </div>
       <ImageWrapper ref={imageRef}>
-        <Ellipse onClick={() => onClick(imageRef)}><Play/></Ellipse>
+        <Ellipse onClick={() => onClick(imageRef)}>
+          <Play />
+        </Ellipse>
         <Image src={image} alt="Alt" />
       </ImageWrapper>
     </Container>

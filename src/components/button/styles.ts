@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { colors } from "src/constants";
+import styled from 'styled-components';
+import { colors } from 'src/constants';
 
 export const Container = styled.button`
   display: flex;
@@ -17,7 +17,7 @@ export const Container = styled.button`
   border: unset;
   border-radius: 86px;
 
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;

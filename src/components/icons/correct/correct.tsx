@@ -1,6 +1,5 @@
-import React from "react";
-import { IconSvg } from "../styles"
-
+import React from 'react';
+import { IconSvg } from '../styles';
 
 interface IIconProp {
   className?: string;
@@ -31,13 +30,8 @@ const Correct = ({ className, props }: IIconProp) => {
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
-        >
-        </pattern>
-        <image
-          id="image0_401_0"
-          width="512"
-          height="512"
-        />
+        ></pattern>
+        <image id="image0_401_0" width="512" height="512" />
       </defs>
     </IconSvg>
   );

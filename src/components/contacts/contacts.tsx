@@ -1,6 +1,5 @@
-import React from "react";
-import { Container, Title, SubTitle, Icon } from './style'
-
+import React from 'react';
+import { Container, Title, SubTitle, Icon } from './style';
 
 export interface IContactsProp {
   icon: React.ReactNode;
@@ -10,7 +9,13 @@ export interface IContactsProp {
   subTitleClassName?: string;
 }
 
-const Contacts = ({ icon, title, subTitle, titleClassName, subTitleClassName }: IContactsProp) => {
+const Contacts = ({
+  icon,
+  title,
+  subTitle,
+  titleClassName,
+  subTitleClassName,
+}: IContactsProp) => {
   return (
     <Container>
       <Icon>{icon}</Icon>
