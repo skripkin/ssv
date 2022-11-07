@@ -5,6 +5,7 @@ import { Container, ModalWrapper } from './style';
 
 const App = () => {
   const [showComponents, setShowComponents] = React.useState(false);
+
   return (
     <Container>
       <div>Page here</div>
