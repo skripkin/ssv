@@ -1,7 +1,6 @@
-import styled from "styled-components";
-import Button from "../button";
-import { colors } from "src/constants";
-
+import styled from 'styled-components';
+import Button from '../button';
+import { colors } from 'src/constants';
 
 export const Container = styled.div`
   color: ${colors.white};
@@ -27,13 +26,12 @@ export const Text = styled.div`
   height: 97px;
   top: 255px;
   word-wrap: break-word;
-  
 `;
 
 export const Image = styled.img`
   width: 100px;
   height: 55px;
-  transform: matrix(1, -.05, -0.2, 2, 10, 25);
+  transform: matrix(1, -0.05, -0.2, 2, 10, 25);
   z-index: 0;
   margin: 0px 166px;
 `;
@@ -60,7 +58,7 @@ export const RoundButton = styled.button`
   background: ${colors.silver};
   border-radius: 86px;
   color: ${colors.white};
-  
+
   div {
     font-weight: 700;
     font-size: 14px;

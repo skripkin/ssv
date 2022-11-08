@@ -1,1 +1,1 @@
-export { default } from "./2gis";
+export { default } from './2gis';

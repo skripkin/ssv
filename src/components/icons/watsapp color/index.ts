@@ -1,1 +1,1 @@
-export { default } from "./watsapp-color";
+export { default } from './watsapp-color';

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { colors } from "src/constants";
+import styled from 'styled-components';
+import { colors } from 'src/constants';
 
 export const Container = styled.div`
   display: flex;
@@ -47,20 +47,19 @@ export const Ellipse = styled.button`
   height: 60px;
   top: 50%;
   left: 50%;
-  background: linear-gradient(180deg, #F9E000 0%, #FD9100 79.17%);
-  box-shadow: 0px 2px 2px #C8510E;
+  background: linear-gradient(180deg, #f9e000 0%, #fd9100 79.17%);
+  box-shadow: 0px 2px 2px #c8510e;
   border-radius: 50%;
   border: unset;
   cursor: pointer;
-  
+
   & > svg {
     width: 14px;
     heigth: 14px;
   }
-   
 `;
 
 export const ImageWrapper = styled.div`
- position: relative;
- margin-left: 10px;
+  position: relative;
+  margin-left: 10px;
 `;

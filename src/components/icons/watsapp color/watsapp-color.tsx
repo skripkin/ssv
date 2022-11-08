@@ -1,6 +1,5 @@
-import React from "react";
-import { IconSvg } from "../styles"
-
+import React from 'react';
+import { IconSvg } from '../styles';
 
 interface IIconProp {
   className?: string;
@@ -31,13 +30,8 @@ const WatsappColor = ({ className, props }: IIconProp) => {
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
-        >
-        </pattern>
-        <image
-          id="image0_297_2169"
-          width="50"
-          height="50"
-        />
+        ></pattern>
+        <image id="image0_297_2169" width="50" height="50" />
       </defs>
     </IconSvg>
   );
