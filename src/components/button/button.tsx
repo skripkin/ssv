@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Container } from './styles';
 
 interface IButtonProp {
@@ -8,11 +8,11 @@ interface IButtonProp {
 }
 
 const Button = ({ title, onClick, className }: IButtonProp) => {
-  return(
+  return (
     <Container onClick={onClick} className={className}>
       {title}
     </Container>
-  )
-}
+  );
+};
 
 export default Button;

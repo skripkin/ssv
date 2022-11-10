@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { colors } from "src/constants";
+import styled from 'styled-components';
+import { colors } from 'src/constants';
 
 export const ButtonSticky = styled.button`
   position: fixed;

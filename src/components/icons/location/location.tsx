@@ -1,6 +1,5 @@
-import React from "react";
-import { IconSvg } from "../styles"
-
+import React from 'react';
+import { IconSvg } from '../styles';
 
 interface IIconProp {
   className?: string;
@@ -20,7 +19,6 @@ const Location = ({ className, props }: IIconProp) => {
       height="413.099px"
       viewBox="0 0 413.099 413.099"
       {...props}
-    
     >
       <g>
         <g>
@@ -36,4 +34,3 @@ const Location = ({ className, props }: IIconProp) => {
 };
 
 export default Location;
- 

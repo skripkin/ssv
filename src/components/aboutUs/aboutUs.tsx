@@ -1,6 +1,6 @@
-import React from "react";
-import UsAdvantages, { IUsAdvantagesProp } from "../usAdvantages/usAdvantages";
-import { Components, Box } from "./style";
+import React from 'react';
+import UsAdvantages, { IUsAdvantagesProp } from '../usAdvantages/usAdvantages';
+import { Components, Box } from './style';
 
 interface IAboutUsProp {
   usAdvantages: IUsAdvantagesProp[];

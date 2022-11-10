@@ -1,13 +1,11 @@
-import React from "react";
-import { IconSvg } from "../styles"
-
+import React from 'react';
+import { IconSvg } from '../styles';
 
 interface IIconProp {
-  className?: string;
   props?: any;
 }
 
-const Phone = ({ className, props }: IIconProp) => {
+const Phone = ({ props }: IIconProp) => {
   return (
     <IconSvg
       width="24"

@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import Button from "../button/button";
-import { colors } from "src/constants";
+import styled from 'styled-components';
+import Button from '../button/button';
+import { colors } from 'src/constants';
 
 export const Container = styled.div`
   display: flex;
@@ -10,10 +10,9 @@ export const Container = styled.div`
   background: ${colors.white};
   box-shadow: 0px 5px 15px ${colors.silver};
   border-radius: 24px;
-`; 
+`;
 
 export const Title = styled.p`
-  
   text-align: center;
   font-style: normal;
   line-height: 56px;
@@ -21,8 +20,8 @@ export const Title = styled.p`
   color: ${colors.pizazz};
   font-weight: 700;
   font-size: 48px;
-  `;
-  
+`;
+
 export const SubTitle = styled.p`
   text-align: center;
   text-transform: uppercase;

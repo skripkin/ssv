@@ -1,5 +1,5 @@
-import React from "react";
-import { IconSvg } from "../styles"
+import React from 'react';
+import { IconSvg } from '../styles';
 
 interface IIconProp {
   className?: string;

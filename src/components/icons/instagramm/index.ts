@@ -1,1 +1,1 @@
-export { default } from "./instagramm";
+export { default } from './instagramm';

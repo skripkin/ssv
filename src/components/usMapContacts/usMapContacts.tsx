@@ -1,5 +1,5 @@
-import React from "react";
-import Contacts, { IContactsProp } from "../contacts/contacts";
+import React from 'react';
+import Contacts, { IContactsProp } from '../contacts/contacts';
 import {
   Container,
   Components,
@@ -13,7 +13,7 @@ import {
   Title,
   FindUsButtonTitle,
   ContactUsButtonTitle,
-} from "./style";
+} from './style';
 
 interface IUsMapContactsProp {
   contacts: IContactsProp[];
@@ -23,7 +23,13 @@ interface IUsMapContactsProp {
   findUsButtonTitle: string;
 }
 
-const UsMapContacts = ({ contacts, onClick, title, contactUsButtonTitle, findUsButtonTitle }: IUsMapContactsProp) => {
+const UsMapContacts = ({
+  contacts,
+  onClick,
+  title,
+  contactUsButtonTitle,
+  findUsButtonTitle,
+}: IUsMapContactsProp) => {
   return (
     <Container>
       <Title>{title}</Title>
@@ -34,8 +40,8 @@ const UsMapContacts = ({ contacts, onClick, title, contactUsButtonTitle, findUsB
               title={item.title}
               subTitle={item.subTitle}
               icon={item.icon}
-              titleClassName='us-map-contact-title'
-              subTitleClassName='us-map-contact-subtitle'
+              titleClassName="us-map-contact-title"
+              subTitleClassName="us-map-contact-subtitle"
             />
           </Contact>
         ))}

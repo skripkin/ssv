@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Button,
   Contacts,
@@ -15,51 +15,51 @@ import {
   SideButton,
   UsMapContacts,
   AboutUs,
-} from "./components";
+} from './components';
 import { CrossButton } from './style';
-import { colors } from "./constants";
+import { colors } from './constants';
 
 const USADVANTAGES_ITEMS = [
   {
-    image: "#",
-    title: "Some title",
-    subTitle: "Some subtitle",
+    image: '#',
+    title: 'Some title',
+    subTitle: 'Some subtitle',
   },
 ];
 
 const CONTACTS_ITEMS = [
   {
     icon: <Icon.Phone />,
-    title: "Some title",
-    subTitle: "Some subtitle",
+    title: 'Some title',
+    subTitle: 'Some subtitle',
   },
   {
     icon: <Icon.Location />,
-    title: "Some title",
-    subTitle: "Some subtitle",
+    title: 'Some title',
+    subTitle: 'Some subtitle',
   },
   {
     icon: <Icon.Time />,
-    title: "Some title",
-    subTitle: "Some subtitle",
+    title: 'Some title',
+    subTitle: 'Some subtitle',
   },
 ];
 
 const USCONTACTS_ITEMS = [
   {
     icon: <Icon.Phone />,
-    title: "+77252318732",
-    subTitle: "+77053715041",
+    title: '+77252318732',
+    subTitle: '+77053715041',
   },
   {
     icon: <Icon.Location />,
-    title: "г. Шымкент",
-    subTitle: "ул. Чехова 7",
+    title: 'г. Шымкент',
+    subTitle: 'ул. Чехова 7',
   },
   {
     icon: <Icon.Time />,
-    title: "с 9-00 до 18-00",
-    subTitle: "(суббота, воскресенье выходной)",
+    title: 'с 9-00 до 18-00',
+    subTitle: '(суббота, воскресенье выходной)',
   },
 ];
 
@@ -79,7 +79,7 @@ const AppPage = ({ onClick }: { onClick: () => void }) => {
       <div style={{ width: 1000 }}>
         <Slider />
       </div>
-      <div style={{ background: "lightgray", margin: 25 }}>
+      <div style={{ background: 'lightgray', margin: 25 }}>
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
       </div>
       <div style={{ margin: 30 }}>
@@ -134,56 +134,66 @@ const AppPage = ({ onClick }: { onClick: () => void }) => {
           image="./image9.png"
         />
       </div>
-      <div style={{ display: "flex", marginBottom: 24 }}>
+      <div style={{ display: 'flex', marginBottom: 24 }}>
         <div>
-          " СТрелка "<Icon.Arrow />
+          `СТрелка`
+          <Icon.Arrow />
         </div>
         <div>
-          " Instagramm " <Icon.Instagramm />
+          `Instagramm`
+          <Icon.Instagramm />
         </div>
         <div>
-          {" "}
-          " Phone "<Icon.Phone />
+          {' '}
+          `Phone`
+          <Icon.Phone />
         </div>
         <div>
-          {" "}
-          " Location "<Icon.Location />
+          {' '}
+          `Location`
+          <Icon.Location />
         </div>
         <div>
-          {" "}
-          " Time "<Icon.Time />
+          {' '}
+          `Time`
+          <Icon.Time />
         </div>
         <div>
-          {" "}
-          " 2gis "<Icon.Gis2 />
+          {' '}
+          `2gis`
+          <Icon.Gis2 />
         </div>
         <div>
-          {" "}
-          " Arrow2 "<Icon.Arrow2 />
+          {' '}
+          `Arrow2`
+          <Icon.Arrow2 />
         </div>
         <div>
-          {" "}
-          " Color Watsapp "<Icon.WatsappColor />
+          {' '}
+          `Color Watsapp`
+          <Icon.WatsappColor />
         </div>
         <div>
-          " Watsapp " <Icon.Watsapp />{" "}
+          `Watsapp`
+          <Icon.Watsapp />{' '}
         </div>
         <div>
-          " Youtube " <Icon.Youtube />{" "}
+          `Youtube`
+          <Icon.Youtube />{' '}
         </div>
         <div>
-          " Play " <Icon.Play />{" "}
+          `Play`
+          <Icon.Play />{' '}
         </div>
         <div>
-          " Rectangle " <Icon.Rectangle />{" "}
+          `Rectangle`
+          <Icon.Rectangle />{' '}
         </div>
         <div>
-          " Correct " <Icon.Correct />{" "}
+          `Correct`
+          <Icon.Correct />{' '}
         </div>
       </div>
-
-     
-
       colors.black
       <div style={{ width: 250, height: 25, backgroundColor: colors.black }} />
       colors.white
@@ -191,7 +201,7 @@ const AppPage = ({ onClick }: { onClick: () => void }) => {
         style={{
           width: 250,
           height: 25,
-          border: "1px solid black",
+          border: '1px solid black',
           backgroundColor: colors.white,
         }}
       />
@@ -227,12 +237,10 @@ const AppPage = ({ onClick }: { onClick: () => void }) => {
       />
       colors.monza
       <div style={{ width: 250, height: 25, backgroundColor: colors.monza }} />
-
-      <div style={{ right: 10}}>
+      <div style={{ right: 10 }}>
         <SideButton onClick={() => null} />
       </div>
     </div>
-    
   );
 };
 
