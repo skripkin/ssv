@@ -136,49 +136,49 @@ const AppPage = ({ onClick }: { onClick: () => void }) => {
       </div>
       <div style={{ display: 'flex', marginBottom: 24 }}>
         <div>
-          &#34 СТрелка &#34 <Icon.Arrow />
+          &#34; СТрелка &#34; <Icon.Arrow />
         </div>
         <div>
-          &#34 Instagramm &#34 <Icon.Instagramm />
+          &#34; Instagramm &#34; <Icon.Instagramm />
         </div>
         <div>
           {' '}
-          &#34 Phone &#34 <Icon.Phone />
+          &#34; Phone &#34; <Icon.Phone />
         </div>
         <div>
           {''}
-          &#34 Location &#34 <Icon.Location />
+          &#34; Location &#34; <Icon.Location />
         </div>
         <div>
           {''}
-          &#34 Time &#34 <Icon.Time />
+          &#34; Time &#34; <Icon.Time />
         </div>
         <div>
           {''}
-          &#34 2gis &#34 <Icon.Gis2 />
+          &#34; 2gis &#34; <Icon.Gis2 />
         </div>
         <div>
           {''}
-          &#34 Arrow2 &#34 <Icon.Arrow2 />
+          &#34; Arrow2 &#34; <Icon.Arrow2 />
         </div>
         <div>
           {''}
-          &#34 Color Watsapp &#34 <Icon.WatsappColor />
+          &#34; Color Watsapp &#34; <Icon.WatsappColor />
         </div>
         <div>
-          &#34 Watsapp &#34 <Icon.Watsapp /> {''}
+          &#34; Watsapp &#34; <Icon.Watsapp /> {''}
         </div>
         <div>
-          &#34 Youtube &#34 <Icon.Youtube /> {''}
+          &#34; Youtube &#34; <Icon.Youtube /> {''}
         </div>
         <div>
-          &#34 Play &#34 <Icon.Play /> {''}
+          &#34; Play &#34; <Icon.Play /> {''}
         </div>
         <div>
-          &#34 Rectangle &#34 <Icon.Rectangle /> {''}
+          &#34; Rectangle &#34; <Icon.Rectangle /> {''}
         </div>
         <div>
-          &#34 Correct &#34 <Icon.Correct /> {''}
+          &#34; Correct &#34; <Icon.Correct /> {''}
         </div>
       </div>
       colors.black
