@@ -5,7 +5,6 @@ import { colors } from 'src/constants';
 export const Container = styled.div`
   color: ${colors.white};
   flex-direction: column;
-  background-color: ${colors.alto};
 `;
 
 export const H1 = styled.h1`

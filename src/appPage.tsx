@@ -67,32 +67,45 @@ const AppPage = ({ onClick }: { onClick: () => void }) => {
   return (
     <div>
       <CrossButton onClick={onClick}>&#9587;</CrossButton>
+      <div style={{ background: 'lightgray', margin: 25 }}>
+        <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
+      </div>
+      <div>
+        <HeaderBackground />
+      </div>
+      <div>
+        <CloudImage image="./cloud.png" />
+      </div>
+      <div style={{ margin: 30 }}>
+        <Application
+          h1="Проект “Английский центр”"
+          text="Обучение английскому языку
+            на высоком уровне качества через курсы, разговорные клубы,
+            ресурсный центр
+            и общение с носителями
+            английского языка"
+          image="./phone.png"
+          onClick={() => null}
+        />
+      </div>
+      <div style={{ margin: 10 }}>
+        <UsAdvantages title="777777" subTitle="8888888888" image="./png1.png" />
+      </div>
       <div>
         <CenterImage
           title="О проекте <<Английский центр>>"
           subTitle="Обучение английскому языку на высоком уровне качества через курсы, разговорные клубы, ресурсный центр и общение с носителями английского языка"
         />
       </div>
-      <div>
-        <HeaderBackground />
+      <div style={{ margin: 30 }}>
+        <Step
+          title="Шаг 1"
+          subTitle="определить уровень"
+          onClick={() => null}
+        />
       </div>
       <div style={{ width: 1000 }}>
         <Slider />
-      </div>
-      <div style={{ background: 'lightgray', margin: 25 }}>
-        <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
-      </div>
-      <div style={{ margin: 30 }}>
-        <Application
-          h1="Проект “Английский центр”"
-          text="Обучение английскому языку
-          на высоком уровне качества через курсы, разговорные клубы,
-          ресурсный центр
-          и общение с носителями
-          английского языка"
-          image="./phone.png"
-          onClick={() => null}
-        />
       </div>
       <div style={{ margin: 10 }}>
         <AboutUs usAdvantages={USADVANTAGES_ITEMS} />
@@ -109,21 +122,8 @@ const AppPage = ({ onClick }: { onClick: () => void }) => {
       <div style={{ margin: 25 }}>
         <Button title="Подробнее" onClick={() => null} />
       </div>
-      <div>
-        <CloudImage image="./cloud.png" />
-      </div>
-      <div style={{ margin: 30 }}>
-        <Step
-          title="Шаг 1"
-          subTitle="определить уровень"
-          onClick={() => null}
-        />
-      </div>
       <div style={{ margin: 10 }}>
         <Contacts title="11111111" subTitle="12345" icon={<Icon.Phone />} />
-      </div>
-      <div style={{ margin: 10 }}>
-        <UsAdvantages title="777777" subTitle="8888888888" image="./png1.png" />
       </div>
       <div style={{ margin: 10 }}>
         <Review
