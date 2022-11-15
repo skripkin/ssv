@@ -17,7 +17,7 @@ function HeaderBackground() {
       <Leftlist src="../LeftList.svg" alt="Alt" />
       <RightList src="../RightList.svg" alt="Alt" />
       <LeftListYellow src="../LeftListYellow.svg" alt="Alt" />
-      <RightListYellow src="../RightListYellow.svg" alt="Alt" />
+      <RightListYellow src="../pnglist.svg" alt="Alt" />
     </Container>
   );
 }
