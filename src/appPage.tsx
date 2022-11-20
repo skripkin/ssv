@@ -136,7 +136,7 @@ const AppPage = ({ onClick }: { onClick: () => void }) => {
       </div>
       <div style={{ display: 'flex', marginBottom: 24 }}>
         <div>
-          `СТрелка`
+          `Стрелка`
           <Icon.Arrow />
         </div>
         <div>
