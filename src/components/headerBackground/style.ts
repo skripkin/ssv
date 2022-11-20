@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
   height: 740px;
   width: 100%;
-  position: relative;
   box-sizing: border-box;
 `;
 
@@ -21,6 +23,13 @@ export const Gradient = styled.div`
     transparent 76%,
     #fd9100 76%
   );
+`;
+
+export const AllList = styled.div``;
+
+export const Application2 = styled.div`
+  margin: auto 0;
+  z-index: 100;
 `;
 
 export const Tanya = styled.img`
@@ -59,8 +68,8 @@ export const RightListYellow = styled.img`
   position: absolute;
   z-index: 2;
   width: 203px;
-  right: 2%;
-  top: 60%;
-  transform: rotate(90deg);
+  right: 5%;
+  top: 58%;
+  transform: rotate(-0.25turn);
   opacity: 0.8;
 `;

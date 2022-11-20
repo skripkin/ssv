@@ -1,9 +1,11 @@
 import React from 'react';
 import {
   Container,
+  Content,
   H1,
   Image,
   Text,
+  ContainerBtn,
   ApplicationButton,
   RoundButton,
 } from './style';
@@ -19,17 +21,21 @@ interface IApplicationProp {
 const Application = ({ image, h1, text, onClick }: IApplicationProp) => {
   return (
     <Container>
-      <H1>{h1}</H1>
-      <Text>{text}</Text>
-      <Image src={image} alt="Alt" />
-      <ApplicationButton title="Оставить заявку" onClick={onClick} />
-      <RoundButton onClick={onClick}>
-        <Play />
-        <div>
-          <p>Посмотреть видео </p>
-          1мин. 26 сек.
-        </div>
-      </RoundButton>
+      <Content>
+        <H1>{h1}</H1>
+        <Text>{text}</Text>
+        <ContainerBtn>
+          <Image src={image} alt="Alt" />
+          <ApplicationButton title="Оставить заявку" onClick={onClick} />
+          <RoundButton onClick={onClick}>
+            <Play />
+            <div>
+              <p>Посмотреть видео </p>
+              1мин. 26 сек.
+            </div>
+          </RoundButton>
+        </ContainerBtn>
+      </Content>
     </Container>
   );
 };

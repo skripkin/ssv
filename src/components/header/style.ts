@@ -3,11 +3,13 @@ import { colors } from 'src/constants';
 
 export const Container = styled.header`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 `;
 
+export const HeaderTop = styled.div``;
+
 export const Image = styled.img`
-  width: 267px;
+  width: 266px;
   height: 67px;
 `;
 

@@ -1,7 +1,17 @@
 import styled from 'styled-components';
 import { colors } from 'src/constants';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  display: flex;
+  width: 1140px;
+  width: 100%;
+  padding: 30px 30px;
+  margin: 0 auto 94px;
+`;
+
+export const Case = styled.div`
+  background-position: center center;
+`;
 
 export const Image = styled.img`
   margin: 0 auto;
@@ -19,10 +29,10 @@ export const Title = styled.p`
 
 export const SubTitle = styled.div`
   font-style: normal;
-  font-weight: 400;
+  padding-top: 20px;
+  font-weight: 300;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  white-space: pre;
   color: ${colors.black};
 `;

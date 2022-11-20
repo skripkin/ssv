@@ -22,5 +22,4 @@ export const Container = styled.button`
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  text-transform: uppercase;
 `;

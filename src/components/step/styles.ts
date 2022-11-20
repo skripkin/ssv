@@ -10,6 +10,8 @@ export const Container = styled.div`
   background: ${colors.white};
   box-shadow: 0px 5px 15px ${colors.silver};
   border-radius: 24px;
+  width: 247px;
+  height: 282px;
 `;
 
 export const Title = styled.p`
@@ -20,6 +22,7 @@ export const Title = styled.p`
   color: ${colors.pizazz};
   font-weight: 700;
   font-size: 48px;
+  padding: 0 0 25px;
 `;
 
 export const SubTitle = styled.p`
@@ -28,13 +31,15 @@ export const SubTitle = styled.p`
   line-height: 29px;
   color: ${colors.black};
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
+  padding: 0 0 30px;
 `;
 
 export const StepButton = styled(Button)`
+  text-transform: uppercase;
+  position: relative;
   padding: 0px 8px 0px;
-  width: 260px;
-  height: 83px;
+  width: 215px;
+  height: 53px;
   margin-top: 17px;
-  margin-bottom: 43px;
 `;

@@ -3,6 +3,7 @@ import { colors } from 'src/constants';
 
 export const Container = styled.div`
   display: flex;
+  text-align: left;
 `;
 
 export const Image = styled.img`
@@ -20,6 +21,8 @@ export const Title = styled.p`
 
 export const SubTitle = styled.p`
   margin: 0;
+  width: 370px;
+  height: 136px;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;

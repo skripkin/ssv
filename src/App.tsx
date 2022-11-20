@@ -5,45 +5,48 @@ import {
   Icon,
   HeaderBackground,
   CloudImage,
-  Application,
   UsAdvantages,
   CenterImage,
   Step,
+  SideButton,
   Slider,
   Button,
   AboutUs,
   UsMapContacts,
-  SideButton,
 } from './components';
 import {
   Container,
   ModalWrapper,
   HeaderLogo,
   Fond,
-  CloudBackground,
   Applic,
-  ButtonReview,
-  CenterImg,
-  StepBtn,
-  About_Us,
+  CloudBackground,
+  UsBenefits,
+  PhotoSlide,
+  TextInTheMiddle,
+  CardsStep,
+  OurReview,
   SliderSlide,
+  LeaveFeedbackButton,
+  MapAndRegistration,
+  OurContacts,
 } from './style';
 
 const CONTACTS_ITEMS = [
   {
     icon: <Icon.Phone />,
-    title: 'Some title',
-    subTitle: 'Some subtitle',
+    title: '+77252318732',
+    subTitle: '+77053715041',
   },
   {
     icon: <Icon.Location />,
-    title: 'Some title',
-    subTitle: 'Some subtitle',
+    title: 'г. Шымкент',
+    subTitle: 'ул. Чехова 7',
   },
   {
     icon: <Icon.Time />,
-    title: 'Some title',
-    subTitle: 'Some subtitle',
+    title: 'с 9-00 до 18-00',
+    subTitle: '(суббота, воскресенье выходной)',
   },
 ];
 
@@ -83,60 +86,92 @@ const App = () => {
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
       </HeaderLogo>
       <Fond>
-        <HeaderBackground />
+        <CloudBackground>
+          <CloudImage image="./cloud.png" />
+        </CloudBackground>
+        <Applic>
+          <HeaderBackground />
+        </Applic>
       </Fond>
-      <CloudBackground>
-        <CloudImage image="./cloud.png" />
-      </CloudBackground>
-      <Applic>
-        <Application
-          h1="Проект “Английский центр”"
-          text="Обучение английскому языку
-            на высоком уровне качества через курсы, разговорные клубы,
-            ресурсный центр
-            и общение с носителями
-            английского языка"
-          image="./phone.png"
-          onClick={() => null}
+      <UsBenefits>
+        <UsAdvantages
+          title="МАТЕРИАЛ"
+          subTitle="Излагается простым и понятным языком"
+          image="./png1.png"
         />
-      </Applic>
-      <UsAdvantages title="777777" subTitle="8888888888" image="./png1.png" />
-      <CenterImg>
+        <UsAdvantages
+          title="ТЕХНОЛОГИИ"
+          subTitle="В обучении используются передовые технологии"
+          image="./gear.png"
+        />
+        <UsAdvantages
+          title="ОБУЧЕНИЕ"
+          subTitle="группах не более 12 человек"
+          image="./12.png"
+        />
+        <UsAdvantages
+          title="ПРЕДОСТАВЛЯЮТСЯ"
+          subTitle="Готовые методические пособия"
+          image="./magazines.png"
+        />
+        <UsAdvantages
+          title="ПРАКТИКА"
+          subTitle="Полученные знания закрепляются на практике"
+          image="./practice.png"
+        />
+      </UsBenefits>
+      <PhotoSlide>
         <CenterImage
           title="О проекте <<Английский центр>>"
           subTitle="Обучение английскому языку на высоком уровне качества через курсы, разговорные клубы, ресурсный центр и общение с носителями английского языка"
         />
-      </CenterImg>
-      <div className="WhatNeedDo">
-        <h2>ЧТО НУЖНО СДЕЛАТЬ</h2>
-        ЧТОБЫ ПОПАСТЬ НА КУРСЫ
-      </div>
-      <StepBtn>
+      </PhotoSlide>
+      <TextInTheMiddle>
+        <div>
+          <p>ЧТО НУЖНО СДЕЛАТЬ</p>
+          ЧТОБЫ ПОПАСТЬ НА КУРСЫ
+        </div>
+      </TextInTheMiddle>
+      <CardsStep>
         <Step
           title="Шаг 1"
           subTitle="определить уровень"
           onClick={() => null}
         />
-      </StepBtn>
-      <div className="rewev">
-        <p>Наши отзывы</p>
-      </div>
+        <Step
+          title="Шаг 2"
+          subTitle="выбрать расписание"
+          onClick={() => null}
+        />
+        <Step
+          title="Шаг 3"
+          subTitle="зарегистрироваться"
+          onClick={() => null}
+        />
+        <Step title="Шаг 4" subTitle="оплатить курс" onClick={() => null} />
+        <Step title="Шаг 5" subTitle="изучать язык" onClick={() => null} />
+      </CardsStep>
+      <OurReview>
+        <div>Наши отзывы</div>
+      </OurReview>
       <SliderSlide>
         <Slider />
       </SliderSlide>
-      <ButtonReview>
+      <LeaveFeedbackButton>
         <Button title="Оставить отзыв" onClick={() => null} />
-      </ButtonReview>
-      <About_Us>
+      </LeaveFeedbackButton>
+      <MapAndRegistration>
         <AboutUs usAdvantages={USADVANTAGES_ITEMS} />
-      </About_Us>
-      <UsMapContacts
-        contacts={USCONTACTS_ITEMS}
-        onClick={() => null}
-        title="Наши контакты"
-        findUsButtonTitle="Задайте вопрос"
-        contactUsButtonTitle="Найти нас здесь"
-      />
+        <OurContacts>
+          <UsMapContacts
+            contacts={USCONTACTS_ITEMS}
+            onClick={() => null}
+            title="Наши контакты"
+            findUsButtonTitle="Задайте вопрос"
+            contactUsButtonTitle="Найти нас здесь"
+          />
+        </OurContacts>
+      </MapAndRegistration>
       <SideButton onClick={() => setShowComponents(!showComponents)} />
       {showComponents && (
         <ModalWrapper>
