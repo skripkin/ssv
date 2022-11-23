@@ -3,22 +3,23 @@ import { colors } from 'src/constants';
 
 export const Container = styled.div`
   display: flex;
-  width: 1140px;
-  width: 100%;
-  padding: 30px 30px;
-  margin: 0 auto 94px;
 `;
 
 export const Case = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   background-position: center center;
 `;
 
 export const Image = styled.img`
-  margin: 0 auto;
+  max-width: 100px;
   display: block;
 `;
 
 export const Title = styled.p`
+  margin: 15px auto;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;

@@ -61,6 +61,7 @@ export const ApplicationButton = styled(Button)`
 `;
 
 export const RoundButton = styled.button`
+  position: relative;
   display: flex;
   padding: 10px;
   width: 25%;
@@ -68,22 +69,24 @@ export const RoundButton = styled.button`
   align-items: center;
   justify-content: center;
   height: 70px;
-  background: ${colors.silver};
+  background: ${colors.Emperor};
   border-radius: 86px;
   color: ${colors.white};
   div {
+    margin-left: 30px;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    text-align: center;
+    text-align: left;
   }
   p {
     font-weight: 400;
   }
 
   & > svg {
+    position: absolute;
     padding: 18px 24px;
-    margin: 20px;
+    margin-right: 204px;
     width: 13px;
     heigth: 13px;
     box-shadow: 0px 2px 2px ${colors.tiaMaria};

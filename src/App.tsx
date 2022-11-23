@@ -1,17 +1,16 @@
 import React from 'react';
 import AppPage from './appPage';
+import Description from './description';
 import {
   Header,
   Icon,
   HeaderBackground,
   CloudImage,
-  UsAdvantages,
   CenterImage,
   Step,
   SideButton,
   Slider,
   Button,
-  AboutUs,
   UsMapContacts,
 } from './components';
 import {
@@ -28,8 +27,8 @@ import {
   OurReview,
   SliderSlide,
   LeaveFeedbackButton,
-  MapAndRegistration,
-  OurContacts,
+  Map,
+  UsMap_Contacts,
 } from './style';
 
 const CONTACTS_ITEMS = [
@@ -47,14 +46,6 @@ const CONTACTS_ITEMS = [
     icon: <Icon.Time />,
     title: 'с 9-00 до 18-00',
     subTitle: '(суббота, воскресенье выходной)',
-  },
-];
-
-const USADVANTAGES_ITEMS = [
-  {
-    image: '#',
-    title: 'Some title',
-    subTitle: 'Some subtitle',
   },
 ];
 
@@ -82,7 +73,7 @@ const App = () => {
   return (
     <Container>
       <div>Page here</div>
-      <HeaderLogo>
+      <HeaderLogo className="wrapper">
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
       </HeaderLogo>
       <Fond>
@@ -93,36 +84,12 @@ const App = () => {
           <HeaderBackground />
         </Applic>
       </Fond>
-      <UsBenefits>
-        <UsAdvantages
-          title="МАТЕРИАЛ"
-          subTitle="Излагается простым и понятным языком"
-          image="./png1.png"
-        />
-        <UsAdvantages
-          title="ТЕХНОЛОГИИ"
-          subTitle="В обучении используются передовые технологии"
-          image="./gear.png"
-        />
-        <UsAdvantages
-          title="ОБУЧЕНИЕ"
-          subTitle="группах не более 12 человек"
-          image="./12.png"
-        />
-        <UsAdvantages
-          title="ПРЕДОСТАВЛЯЮТСЯ"
-          subTitle="Готовые методические пособия"
-          image="./magazines.png"
-        />
-        <UsAdvantages
-          title="ПРАКТИКА"
-          subTitle="Полученные знания закрепляются на практике"
-          image="./practice.png"
-        />
+      <UsBenefits className="wrapper">
+        <Description />
       </UsBenefits>
       <PhotoSlide>
         <CenterImage
-          title="О проекте <<Английский центр>>"
+          title="О проекте «Английский центр»"
           subTitle="Обучение английскому языку на высоком уровне качества через курсы, разговорные клубы, ресурсный центр и общение с носителями английского языка"
         />
       </PhotoSlide>
@@ -132,7 +99,7 @@ const App = () => {
           ЧТОБЫ ПОПАСТЬ НА КУРСЫ
         </div>
       </TextInTheMiddle>
-      <CardsStep>
+      <CardsStep className="wrapper">
         <Step
           title="Шаг 1"
           subTitle="определить уровень"
@@ -154,15 +121,14 @@ const App = () => {
       <OurReview>
         <div>Наши отзывы</div>
       </OurReview>
-      <SliderSlide>
+      <SliderSlide className="wrapper">
         <Slider />
       </SliderSlide>
       <LeaveFeedbackButton>
         <Button title="Оставить отзыв" onClick={() => null} />
       </LeaveFeedbackButton>
-      <MapAndRegistration>
-        <AboutUs usAdvantages={USADVANTAGES_ITEMS} />
-        <OurContacts>
+      <Map>
+        <UsMap_Contacts>
           <UsMapContacts
             contacts={USCONTACTS_ITEMS}
             onClick={() => null}
@@ -170,8 +136,8 @@ const App = () => {
             findUsButtonTitle="Задайте вопрос"
             contactUsButtonTitle="Найти нас здесь"
           />
-        </OurContacts>
-      </MapAndRegistration>
+        </UsMap_Contacts>
+      </Map>
       <SideButton onClick={() => setShowComponents(!showComponents)} />
       {showComponents && (
         <ModalWrapper>

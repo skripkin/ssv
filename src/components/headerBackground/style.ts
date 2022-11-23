@@ -67,8 +67,8 @@ export const LeftListYellow = styled.img`
 export const RightListYellow = styled.img`
   position: absolute;
   z-index: 2;
-  width: 203px;
-  right: 5%;
+  width: 200px;
+  right: 8%;
   top: 58%;
   transform: rotate(-0.25turn);
   opacity: 0.8;

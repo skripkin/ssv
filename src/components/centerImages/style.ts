@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from 'src/constants';
 
 export const Container = styled.div`
   width: 100%;
@@ -6,19 +7,19 @@ export const Container = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-evenly;
-  background: #edebeb;
+  background: ${colors.Gallery};
 `;
 
 export const FirstImage = styled.img`
   width: 290px;
-  margin-top: 20%;
+  margin-bottom: 40%;
 `;
 
 export const SecondImage = styled.img`
   z-index: 1;
   position: absolute;
   width: 290px;
-  top: 20%;
+  top: 15%;
   left: 40%;
 `;
 
@@ -27,8 +28,7 @@ export const Title = styled.div`
   font-style: normal;
   font-weight: 700;
   font-size: 34px;
-  width: 380px;
-  margin-top: 32%;
+  width: 350px;
 `;
 
 export const SubTitle = styled.div`
@@ -40,4 +40,6 @@ export const SubTitle = styled.div`
   width: 400px;
 `;
 
-export const Component = styled.div``;
+export const Component = styled.div`
+  margin-bottom: 10%;
+`;

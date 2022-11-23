@@ -51,10 +51,9 @@ export const CloudBackground = styled.div`
 
 export const UsBenefits = styled.div`
   position: relative;
-  display: flex;
-  padding: 0 125px;
-  align-items: center;
-  margin: 0 auto;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 20px auto;
   z-index: 100;
 `;
 
@@ -64,7 +63,7 @@ export const TextInTheMiddle = styled.div`
   font-weight: 300;
   font-size: 24px;
   text-align: center;
-  margin-top: 300px;
+  margin-top: 200px;
   p {
     font-weight: 700;
     font-size: 36px;
@@ -73,11 +72,10 @@ export const TextInTheMiddle = styled.div`
 `;
 
 export const CardsStep = styled.div`
-  text-transform: uppercase;
-  position: relative;
   display: flex;
-  justify-content: space-between;
-  margin: 74px 70px;
+  width: 100%;
+  align-items: center;
+  margin: 74px 9% 210px;
 `;
 
 export const OurReview = styled.div`
@@ -102,14 +100,15 @@ export const LeaveFeedbackButton = styled.div`
   display: block;
 `;
 
-export const MapAndRegistration = styled.div`
-  margin: 0 auto 23px;
+export const Map = styled.div`
+  background-image: url('../map.jpg');
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 100px 0 29px;
 `;
 
-export const OurContacts = styled.div`
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  margin-left: 55%;
-  margin-bottom: 23px;
+export const UsMap_Contacts = styled.div`
+  margin-left: 60%;
 `;

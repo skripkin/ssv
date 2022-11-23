@@ -11,3 +11,5 @@ export const greenPea = '#236E45';
 export const monza = '#D30011';
 export const SchoolBusYellow = '#F9DA00';
 export const tiaMaria = '#C8510E';
+export const Emperor = '#515151';
+export const Gallery = '#EDEBEB';
