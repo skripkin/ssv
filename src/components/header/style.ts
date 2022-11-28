@@ -6,8 +6,6 @@ export const Container = styled.header`
   justify-content: space-between;
 `;
 
-export const HeaderTop = styled.div``;
-
 export const Image = styled.img`
   width: 266px;
   height: 67px;

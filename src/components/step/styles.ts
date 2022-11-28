@@ -12,7 +12,7 @@ export const Container = styled.div`
   box-shadow: 0px 5px 15px ${colors.silver};
   border-radius: 24px;
   padding: 0 10px;
-  margin-left: 15px;
+  margin: 0 10px;
   width: 247px;
   height: 282px;
 `;

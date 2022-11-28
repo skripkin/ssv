@@ -21,7 +21,7 @@ interface IApplicationProp {
 const Application = ({ image, h1, text, onClick }: IApplicationProp) => {
   return (
     <Container>
-      <Content>
+      <Content className="wrapper">
         <H1>{h1}</H1>
         <Text>{text}</Text>
         <ContainerBtn>

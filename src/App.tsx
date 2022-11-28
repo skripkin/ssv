@@ -1,71 +1,35 @@
 import React from 'react';
 import AppPage from './appPage';
-import Description from './description';
+import { USADVANTAGES_ITEMS } from './mock';
+import { CONTACTS_ITEMS } from './mock';
 import {
   Header,
-  Icon,
   HeaderBackground,
   CloudImage,
+  AboutUs,
   CenterImage,
   Step,
   SideButton,
   Slider,
   Button,
-  UsMapContacts,
 } from './components';
 import {
   Container,
   ModalWrapper,
   HeaderLogo,
   Fond,
-  Applic,
   CloudBackground,
   UsBenefits,
-  PhotoSlide,
   TextInTheMiddle,
   CardsStep,
   OurReview,
   SliderSlide,
   LeaveFeedbackButton,
-  Map,
+  StyledMapContacts,
   UsMap_Contacts,
+  Map,
+  MapContainer,
 } from './style';
-
-const CONTACTS_ITEMS = [
-  {
-    icon: <Icon.Phone />,
-    title: '+77252318732',
-    subTitle: '+77053715041',
-  },
-  {
-    icon: <Icon.Location />,
-    title: 'г. Шымкент',
-    subTitle: 'ул. Чехова 7',
-  },
-  {
-    icon: <Icon.Time />,
-    title: 'с 9-00 до 18-00',
-    subTitle: '(суббота, воскресенье выходной)',
-  },
-];
-
-const USCONTACTS_ITEMS = [
-  {
-    icon: <Icon.Phone />,
-    title: '+77252318732',
-    subTitle: '+77053715041',
-  },
-  {
-    icon: <Icon.Location />,
-    title: 'г. Шымкент',
-    subTitle: 'ул. Чехова 7',
-  },
-  {
-    icon: <Icon.Time />,
-    title: 'с 9-00 до 18-00',
-    subTitle: '(суббота, воскресенье выходной)',
-  },
-];
 
 const App = () => {
   const [showComponents, setShowComponents] = React.useState(false);
@@ -80,19 +44,19 @@ const App = () => {
         <CloudBackground>
           <CloudImage image="./cloud.png" />
         </CloudBackground>
-        <Applic>
+        <div>
           <HeaderBackground />
-        </Applic>
+        </div>
       </Fond>
       <UsBenefits className="wrapper">
-        <Description />
+        <AboutUs usAdvantages={USADVANTAGES_ITEMS} />
       </UsBenefits>
-      <PhotoSlide>
+      <div>
         <CenterImage
           title="О проекте «Английский центр»"
           subTitle="Обучение английскому языку на высоком уровне качества через курсы, разговорные клубы, ресурсный центр и общение с носителями английского языка"
         />
-      </PhotoSlide>
+      </div>
       <TextInTheMiddle>
         <div>
           <p>ЧТО НУЖНО СДЕЛАТЬ</p>
@@ -127,17 +91,19 @@ const App = () => {
       <LeaveFeedbackButton>
         <Button title="Оставить отзыв" onClick={() => null} />
       </LeaveFeedbackButton>
-      <Map>
-        <UsMap_Contacts>
-          <UsMapContacts
-            contacts={USCONTACTS_ITEMS}
-            onClick={() => null}
-            title="Наши контакты"
-            findUsButtonTitle="Задайте вопрос"
-            contactUsButtonTitle="Найти нас здесь"
-          />
-        </UsMap_Contacts>
-      </Map>
+      <MapContainer>
+        <Map>
+          <UsMap_Contacts>
+            <StyledMapContacts
+              contacts={CONTACTS_ITEMS}
+              onClick={() => null}
+              title="Наши контакты"
+              findUsButtonTitle="Задайте вопрос"
+              contactUsButtonTitle="Найти нас здесь"
+            />
+          </UsMap_Contacts>
+        </Map>
+      </MapContainer>
       <SideButton onClick={() => setShowComponents(!showComponents)} />
       {showComponents && (
         <ModalWrapper>

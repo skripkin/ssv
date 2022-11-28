@@ -1,6 +1,6 @@
-import { AboutUs } from './components';
+import { Icon } from './components';
 
-const USADVANTAGES_ITEMS = [
+export const USADVANTAGES_ITEMS = [
   {
     image: './png1.png',
     title: 'МАТЕРИАЛ',
@@ -28,8 +28,20 @@ const USADVANTAGES_ITEMS = [
   },
 ];
 
-const Description = () => {
-  return <AboutUs usAdvantages={USADVANTAGES_ITEMS} />;
-};
-
-export default Description;
+export const CONTACTS_ITEMS = [
+  {
+    icon: <Icon.Phone />,
+    title: '+77252318732',
+    subTitle: '+77053715041',
+  },
+  {
+    icon: <Icon.Location />,
+    title: 'г. Шымкент',
+    subTitle: 'ул. Чехова 7',
+  },
+  {
+    icon: <Icon.Time />,
+    title: 'с 9-00 до 18-00',
+    subTitle: '(суббота, воскресенье выходной)',
+  },
+];

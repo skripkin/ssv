@@ -1,8 +1,8 @@
 import styled from 'styled-components';
+import UsMapContacts from './components/usMapContacts';
 
 export const Container = styled.div`
   height: 100vh;
-  max-width: 1989px;
   width: 100%;
 `;
 
@@ -29,10 +29,11 @@ export const CrossButton = styled.button`
 
 export const HeaderLogo = styled.div`
   position: relative;
-  margin-left: 10%;
   align-items: center;
-  max-width: 1140px;
   z-index: 100;
+  svg {
+    fill: white;
+  }
 `;
 
 export const Fond = styled.div`
@@ -40,11 +41,9 @@ export const Fond = styled.div`
   position: relative;
 `;
 
-export const Applic = styled.div``;
-
 export const CloudBackground = styled.div`
   position: absolute;
-  margin-top: 20%;
+  margin-top: 200px;
   z-index: 20;
   width: 100%;
 `;
@@ -53,17 +52,15 @@ export const UsBenefits = styled.div`
   position: relative;
   justify-content: space-between;
   align-items: baseline;
-  margin: 20px auto;
+  margin: 20px auto 47px;
   z-index: 100;
 `;
-
-export const PhotoSlide = styled.div``;
 
 export const TextInTheMiddle = styled.div`
   font-weight: 300;
   font-size: 24px;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 100px;
   p {
     font-weight: 700;
     font-size: 36px;
@@ -74,8 +71,10 @@ export const TextInTheMiddle = styled.div`
 export const CardsStep = styled.div`
   display: flex;
   width: 100%;
+  justify-content: center;
   align-items: center;
-  margin: 74px 9% 210px;
+  padding: 0 20px;
+  margin: 74px auto 100px;
 `;
 
 export const OurReview = styled.div`
@@ -83,12 +82,11 @@ export const OurReview = styled.div`
   font-size: 48px;
   line-height: 56px;
   text-align: center;
-  margin: 0 auto 90px;
+  margin: 50px auto 90px;
 `;
 
 export const SliderSlide = styled.div`
-  margin: 0 auto 128px;
-  max-width: 1140px;
+  margin: 40px auto 64px;
   width: 100%;
 `;
 
@@ -96,19 +94,35 @@ export const LeaveFeedbackButton = styled.div`
   width: 215px;
   height: 53px;
   text-align: center;
-  margin: 0 auto 115px;
+  margin: 64px auto 57px;
   display: block;
 `;
 
-export const Map = styled.div`
+export const MapContainer = styled.div`
   background-image: url('../map.jpg');
-  background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  padding: 100px 0 29px;
+  margin-top: 87px;
+`;
+
+export const Map = styled.div`
+  display: flex;
+  max-width: min(100% - 48px, 1158px);
+  margin: 0 auto;
+  min-height: 700px;
+`;
+
+export const StyledMapContacts = styled(UsMapContacts)`
+  svg {
+    fill: black;
+    width: 36px;
+    height: 35px;
+  }
 `;
 
 export const UsMap_Contacts = styled.div`
-  margin-left: 60%;
+  display: inline-block;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: 23px;
 `;

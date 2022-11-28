@@ -36,8 +36,8 @@ export const Tanya = styled.img`
   z-index: 1;
   position: absolute;
   width: 470px;
-  right: 11.3%;
-  top: 10%;
+  right: 250px;
+  top: 90px;
 `;
 
 export const Leftlist = styled.img`
@@ -50,16 +50,16 @@ export const RightList = styled.img`
   position: absolute;
   z-index: 2;
   width: 275px;
-  top: 50%;
-  right: 1%;
+  top: 440px;
+  right: 60px;
 `;
 
 export const LeftListYellow = styled.img`
   position: absolute;
   z-index: 1;
   width: 129px;
-  left: -2%;
-  top: -1%;
+  left: 0;
+  top: 3px;
   transform: rotate(-2deg);
   opacity: 0.8;
 `;
@@ -68,8 +68,8 @@ export const RightListYellow = styled.img`
   position: absolute;
   z-index: 2;
   width: 200px;
-  right: 8%;
-  top: 58%;
-  transform: rotate(-0.25turn);
+  right: 110px;
+  bottom: -105px;
+  transform: rotate(-90deg);
   opacity: 0.8;
 `;

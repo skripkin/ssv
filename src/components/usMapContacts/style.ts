@@ -5,14 +5,13 @@ import { colors } from 'src/constants';
 export const Container = styled.div`
   width: 400px;
   height: 500px;
-  padding-top: 20px;
-
   background: ${colors.white};
   box-shadow: 4px -4px 10px rgba(0, 0, 0, 0.5);
 `;
 
 export const Components = styled.div`
   align-items: center;
+  white-space: nowrap;
 `;
 
 export const Contact = styled.div`
@@ -22,9 +21,9 @@ export const Contact = styled.div`
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  width: 160px;
+  width: 327px;
   height: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 
   color: ${colors.black};
 
@@ -32,7 +31,7 @@ export const Contact = styled.div`
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 21px;
     color: ${colors.black};
   }
@@ -41,7 +40,7 @@ export const Contact = styled.div`
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 21px;
     color: ${colors.black}
     width: 300px;
@@ -51,8 +50,8 @@ export const Contact = styled.div`
 export const Button1 = styled.button`
   display: flex;
   align-items: center;
-  margin-left: 10%;
-  margin-top: 8%;
+  margin-left: 30px;
+  margin-top: 30px;
   padding: 12px 20px;
   height: 46px;
   width: 290px;
@@ -64,8 +63,8 @@ export const Button1 = styled.button`
 export const Button2 = styled.button`
   display: flex;
   align-items: center;
-  margin-left: 10%;
-  margin-top: 12%;
+  margin-left: 30px;
+  margin-top: 45px;
   padding: 12px 20px;
   width: 290px;
   height: 47px;
@@ -74,7 +73,8 @@ export const Button2 = styled.button`
 `;
 
 export const Title = styled.p`
-  margin-left: 30px;
+  margin-left: 50px;
+  padding-top: 30px;
   width: 238.31px;
   height: 35.78px;
   font-family: 'Roboto';

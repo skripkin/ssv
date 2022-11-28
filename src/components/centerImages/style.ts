@@ -12,15 +12,15 @@ export const Container = styled.div`
 
 export const FirstImage = styled.img`
   width: 290px;
-  margin-bottom: 40%;
+  margin-bottom: 80px;
 `;
 
 export const SecondImage = styled.img`
   z-index: 1;
   position: absolute;
   width: 290px;
-  top: 15%;
-  left: 40%;
+  top: 60px;
+  left: 110px;
 `;
 
 export const Title = styled.div`
@@ -41,5 +41,5 @@ export const SubTitle = styled.div`
 `;
 
 export const Component = styled.div`
-  margin-bottom: 10%;
+  margin-bottom: 90px;
 `;

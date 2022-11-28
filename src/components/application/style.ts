@@ -12,7 +12,6 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: inline-block;
   width: 100%;
-  max-width: 1140px;
   text-align: left;
 `;
 
@@ -52,7 +51,7 @@ export const Image = styled.img`
 `;
 
 export const ApplicationButton = styled(Button)`
-  margin: 0 0 112px;
+  margin: 0 0 80px;
   width: 25%;
   height: 70px;
   font-weight: 400;
@@ -86,7 +85,7 @@ export const RoundButton = styled.button`
   & > svg {
     position: absolute;
     padding: 18px 24px;
-    margin-right: 204px;
+    margin-right: 190px;
     width: 13px;
     heigth: 13px;
     box-shadow: 0px 2px 2px ${colors.tiaMaria};
