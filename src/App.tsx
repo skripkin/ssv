@@ -1,7 +1,5 @@
 import React from 'react';
-import AppPage from './appPage';
-import { USADVANTAGES_ITEMS } from './mock';
-import { CONTACTS_ITEMS } from './mock';
+import { STEPS, USADVANTAGES_ITEMS, CONTACTS_ITEMS } from './mock';
 import {
   Header,
   HeaderBackground,
@@ -9,108 +7,74 @@ import {
   AboutUs,
   CenterImage,
   Step,
-  SideButton,
   Slider,
   Button,
 } from './components';
-import {
-  Container,
-  ModalWrapper,
-  HeaderLogo,
-  Fond,
-  CloudBackground,
-  UsBenefits,
-  TextInTheMiddle,
-  CardsStep,
-  OurReview,
-  SliderSlide,
-  LeaveFeedbackButton,
-  StyledMapContacts,
-  UsMap_Contacts,
-  Map,
-  MapContainer,
-} from './style';
+import * as Styles from './style';
 
 const App = () => {
-  const [showComponents, setShowComponents] = React.useState(false);
-
   return (
-    <Container>
+    <Styles.Container>
       <div>Page here</div>
-      <HeaderLogo className="wrapper">
+      <Styles.HeaderLogo className="wrapper">
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
-      </HeaderLogo>
-      <Fond>
-        <CloudBackground>
+      </Styles.HeaderLogo>
+      <Styles.Fond>
+        <Styles.CloudBackground>
           <CloudImage image="./cloud.png" />
-        </CloudBackground>
+        </Styles.CloudBackground>
         <div>
           <HeaderBackground />
         </div>
-      </Fond>
-      <UsBenefits className="wrapper">
+      </Styles.Fond>
+      <Styles.UsBenefits className="wrapper">
         <AboutUs usAdvantages={USADVANTAGES_ITEMS} />
-      </UsBenefits>
+      </Styles.UsBenefits>
       <div>
         <CenterImage
           title="О проекте «Английский центр»"
           subTitle="Обучение английскому языку на высоком уровне качества через курсы, разговорные клубы, ресурсный центр и общение с носителями английского языка"
         />
       </div>
-      <TextInTheMiddle>
+      <Styles.TextInTheMiddle>
         <div>
           <p>ЧТО НУЖНО СДЕЛАТЬ</p>
           ЧТОБЫ ПОПАСТЬ НА КУРСЫ
         </div>
-      </TextInTheMiddle>
-      <CardsStep className="wrapper">
-        <Step
-          title="Шаг 1"
-          subTitle="определить уровень"
-          onClick={() => null}
-        />
-        <Step
-          title="Шаг 2"
-          subTitle="выбрать расписание"
-          onClick={() => null}
-        />
-        <Step
-          title="Шаг 3"
-          subTitle="зарегистрироваться"
-          onClick={() => null}
-        />
-        <Step title="Шаг 4" subTitle="оплатить курс" onClick={() => null} />
-        <Step title="Шаг 5" subTitle="изучать язык" onClick={() => null} />
-      </CardsStep>
-      <OurReview>
+      </Styles.TextInTheMiddle>
+      <Styles.CardsStep className="wrapper">
+        {STEPS.map((item, index) => (
+          <Step
+            key={`${item.title}-${index}`}
+            title={item.title}
+            subTitle={item.subTitle}
+            onClick={() => null}
+          />
+        ))}
+      </Styles.CardsStep>
+      <Styles.OurReview>
         <div>Наши отзывы</div>
-      </OurReview>
-      <SliderSlide className="wrapper">
+      </Styles.OurReview>
+      <Styles.SliderSlide className="wrapper">
         <Slider />
-      </SliderSlide>
-      <LeaveFeedbackButton>
+      </Styles.SliderSlide>
+      <Styles.LeaveFeedbackButton>
         <Button title="Оставить отзыв" onClick={() => null} />
-      </LeaveFeedbackButton>
-      <MapContainer>
-        <Map>
-          <UsMap_Contacts>
-            <StyledMapContacts
+      </Styles.LeaveFeedbackButton>
+      <Styles.MapContainer>
+        <Styles.Map>
+          <Styles.UsMapContactsContainer>
+            <Styles.StyledMapContacts
               contacts={CONTACTS_ITEMS}
               onClick={() => null}
               title="Наши контакты"
               findUsButtonTitle="Задайте вопрос"
               contactUsButtonTitle="Найти нас здесь"
             />
-          </UsMap_Contacts>
-        </Map>
-      </MapContainer>
-      <SideButton onClick={() => setShowComponents(!showComponents)} />
-      {showComponents && (
-        <ModalWrapper>
-          <AppPage onClick={() => setShowComponents(!showComponents)} />
-        </ModalWrapper>
-      )}
-    </Container>
+          </Styles.UsMapContactsContainer>
+        </Styles.Map>
+      </Styles.MapContainer>
+    </Styles.Container>
   );
 };
 

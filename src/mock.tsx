@@ -45,3 +45,26 @@ export const CONTACTS_ITEMS = [
     subTitle: '(суббота, воскресенье выходной)',
   },
 ];
+
+export const STEPS = [
+  {
+    title: 'Шаг 1',
+    subTitle: 'определить уровень',
+  },
+  {
+    title: 'Шаг 2',
+    subTitle: 'выбрать расписание',
+  },
+  {
+    title: 'Шаг 3',
+    subTitle: 'зарегистрироваться',
+  },
+  {
+    title: 'Шаг 4',
+    subTitle: 'оплатить курс',
+  },
+  {
+    title: 'Шаг 5',
+    subTitle: 'изучать язык',
+  },
+];

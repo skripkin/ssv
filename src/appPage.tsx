@@ -16,7 +16,6 @@ import {
   UsMapContacts,
   AboutUs,
 } from './components';
-import { CrossButton } from './style';
 import { colors } from './constants';
 
 const USADVANTAGES_ITEMS = [
@@ -63,10 +62,9 @@ const USCONTACTS_ITEMS = [
   },
 ];
 
-const AppPage = ({ onClick }: { onClick: () => void }) => {
+const AppPage = () => {
   return (
     <div>
-      <CrossButton onClick={onClick}>&#9587;</CrossButton>
       <div style={{ background: 'lightgray', margin: 25 }}>
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
       </div>

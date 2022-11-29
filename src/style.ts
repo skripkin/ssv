@@ -6,27 +6,6 @@ export const Container = styled.div`
   width: 100%;
 `;
 
-export const ModalWrapper = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: 90vh;
-  overflow: auto;
-  z-index: 10;
-`;
-
-export const CrossButton = styled.button`
-  display: block;
-  position: sticky;
-  top: 12px;
-  margin-left: auto;
-  margin-right: 12px;
-  padding: 8px;
-  z-index: 10;
-`;
-
 export const HeaderLogo = styled.div`
   position: relative;
   align-items: center;
@@ -120,7 +99,7 @@ export const StyledMapContacts = styled(UsMapContacts)`
   }
 `;
 
-export const UsMap_Contacts = styled.div`
+export const UsMapContactsContainer = styled.div`
   display: inline-block;
   margin-top: auto;
   margin-left: auto;
