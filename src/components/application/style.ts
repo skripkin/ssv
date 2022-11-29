@@ -5,13 +5,20 @@ import { colors } from 'src/constants';
 export const Container = styled.div`
   color: ${colors.white};
   flex-direction: column;
-  background-color: ${colors.alto};
+  width: 100%;
+  text-align: center;
+`;
+
+export const Content = styled.div`
+  display: inline-block;
+  width: 100%;
+  text-align: left;
 `;
 
 export const H1 = styled.h1`
   align-items: center;
   font-weight: 700;
-  font-size: 60px;
+  font-size: xxx-large;
   line-height: 74px;
   text-transform: uppercase;
   height: 70px;
@@ -19,29 +26,33 @@ export const H1 = styled.h1`
 `;
 
 export const Text = styled.div`
-  margin: 24px;
+  margin: 16px 0px 50px;
   font-weight: 400;
   font-size: 18px;
-  width: 40%;
+  width: 50%;
   height: 97px;
-  top: 255px;
   word-wrap: break-word;
 `;
 
+export const ContainerBtn = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: start;
+`;
+
 export const Image = styled.img`
+  position: absolute;
   width: 100px;
   height: 55px;
   transform: matrix(1, -0.05, -0.2, 2, 10, 25);
-  z-index: 0;
-  margin: 0px 166px;
+  z-index: 2;
+  margin-top: -50px;
+  margin-left: 10px;
 `;
 
 export const ApplicationButton = styled(Button)`
-  display: flex;
-  text-transform: none;
-  padding: 0px 8px 0px;
-  margin: 24px;
-  width: 50%;
+  margin: 0 0 80px;
+  width: 25%;
   height: 70px;
   font-weight: 400;
   font-size: 14px;
@@ -49,28 +60,32 @@ export const ApplicationButton = styled(Button)`
 `;
 
 export const RoundButton = styled.button`
-  margin: 0px 450px;
+  position: relative;
   display: flex;
+  padding: 10px;
+  width: 25%;
+  margin-left: 20px;
   align-items: center;
   justify-content: center;
-  width: 50%;
   height: 70px;
-  background: ${colors.silver};
+  background: ${colors.Emperor};
   border-radius: 86px;
   color: ${colors.white};
   div {
+    margin-left: 30px;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    text-align: center;
+    text-align: left;
   }
   p {
     font-weight: 400;
   }
 
   & > svg {
+    position: absolute;
     padding: 18px 24px;
-    margin: 20px;
+    margin-right: 190px;
     width: 13px;
     heigth: 13px;
     box-shadow: 0px 2px 2px ${colors.tiaMaria};

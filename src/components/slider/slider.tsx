@@ -40,7 +40,7 @@ const Slider = () => {
                     надеюсь на то, что в скором будущем 
                     беспокойство по поводу моего «я не понимаю» 
                     или «я боюсь сказать» исчезнет."
-              dataTime="08 september"
+              dataTime="4 дек. 2019 г."
               image="./image9.png"
             />
           </div>
@@ -51,7 +51,7 @@ const Slider = () => {
               onClick={(element: any) => console.log(element)}
               title="Венера"
               subTitle="Hello"
-              dataTime="08 september"
+              dataTime="4 дек. 2019 г."
               image="./image9.png"
             />
           </div>

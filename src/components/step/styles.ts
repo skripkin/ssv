@@ -4,12 +4,17 @@ import { colors } from 'src/constants';
 
 export const Container = styled.div`
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: ${colors.white};
   box-shadow: 0px 5px 15px ${colors.silver};
   border-radius: 24px;
+  padding: 0 10px;
+  margin: 0 10px;
+  width: 247px;
+  height: 282px;
 `;
 
 export const Title = styled.p`
@@ -20,21 +25,24 @@ export const Title = styled.p`
   color: ${colors.pizazz};
   font-weight: 700;
   font-size: 48px;
+  padding: 0 0 25px;
 `;
 
 export const SubTitle = styled.p`
   text-align: center;
   text-transform: uppercase;
-  line-height: 29px;
+  line-height: 22px;
   color: ${colors.black};
   font-weight: 400;
-  font-size: 24px;
+  font-size: 17px;
+  padding: 0 0 30px;
 `;
 
 export const StepButton = styled(Button)`
+  text-transform: uppercase;
+  position: relative;
   padding: 0px 8px 0px;
-  width: 260px;
-  height: 83px;
+  width: 200px;
+  height: 53px;
   margin-top: 17px;
-  margin-bottom: 43px;
 `;

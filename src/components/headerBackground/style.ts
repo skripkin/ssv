@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
   height: 740px;
   width: 100%;
-  position: relative;
   box-sizing: border-box;
 `;
 
@@ -23,12 +25,19 @@ export const Gradient = styled.div`
   );
 `;
 
+export const AllList = styled.div``;
+
+export const Application2 = styled.div`
+  margin: auto 0;
+  z-index: 100;
+`;
+
 export const Tanya = styled.img`
   z-index: 1;
   position: absolute;
   width: 470px;
-  right: 11.3%;
-  top: 10%;
+  right: 250px;
+  top: 90px;
 `;
 
 export const Leftlist = styled.img`
@@ -41,16 +50,16 @@ export const RightList = styled.img`
   position: absolute;
   z-index: 2;
   width: 275px;
-  top: 50%;
-  right: 1%;
+  top: 440px;
+  right: 60px;
 `;
 
 export const LeftListYellow = styled.img`
   position: absolute;
   z-index: 1;
   width: 129px;
-  left: -2%;
-  top: -1%;
+  left: 0;
+  top: 3px;
   transform: rotate(-2deg);
   opacity: 0.8;
 `;
@@ -58,9 +67,9 @@ export const LeftListYellow = styled.img`
 export const RightListYellow = styled.img`
   position: absolute;
   z-index: 2;
-  width: 203px;
-  right: 2%;
-  top: 60%;
-  transform: rotate(90deg);
+  width: 200px;
+  right: 110px;
+  bottom: -105px;
+  transform: rotate(-90deg);
   opacity: 0.8;
 `;

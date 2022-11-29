@@ -17,6 +17,7 @@ import {
 
 interface IUsMapContactsProp {
   contacts: IContactsProp[];
+  className?: string;
   onClick: () => void;
   title: string;
   contactUsButtonTitle: string;
@@ -25,6 +26,7 @@ interface IUsMapContactsProp {
 
 const UsMapContacts = ({
   contacts,
+  className,
   onClick,
   title,
   contactUsButtonTitle,
@@ -35,7 +37,7 @@ const UsMapContacts = ({
       <Title>{title}</Title>
       <Components>
         {contacts.map((item, index) => (
-          <Contact key={`${item.title}-${index}`}>
+          <Contact className={className} key={`${item.title}-${index}`}>
             <Contacts
               title={item.title}
               subTitle={item.subTitle}

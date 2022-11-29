@@ -7,9 +7,9 @@
   overflow: hidden;
   display: flex;
   text-align: center;
-  background: darkgray;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 .slideNext {
