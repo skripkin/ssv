@@ -15,7 +15,6 @@ import * as Styles from './style';
 const App = () => {
   return (
     <Styles.Container>
-      <div>Page here</div>
       <Styles.HeaderLogo className="wrapper">
         <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
       </Styles.HeaderLogo>
