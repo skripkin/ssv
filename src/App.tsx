@@ -15,16 +15,15 @@ import * as Styles from './style';
 const App = () => {
   return (
     <Styles.Container>
-      <div>Page here</div>
       <Styles.HeaderContainer>
         <Styles.Fond>
-          <Styles.HeaderLogo className="wrapper">
-            <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
-          </Styles.HeaderLogo>
           <Styles.CloudBackground>
             <CloudImage image="./group_cloud.png" />
           </Styles.CloudBackground>
           <div>
+            <Styles.HeaderLogo className="wrapper">
+              <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
+            </Styles.HeaderLogo>
             <HeaderBackground />
           </div>
         </Styles.Fond>

@@ -11,10 +11,12 @@ export const HeaderContainer = styled.div`
 
 export const Fond = styled.div`
   height: 100%;
+  margin-top: -90px;
 `;
 
 export const HeaderLogo = styled.div`
   position: relative;
+  top: 90px;
   align-items: center;
   z-index: 100;
   svg {
