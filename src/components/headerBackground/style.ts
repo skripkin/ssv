@@ -25,8 +25,6 @@ export const Gradient = styled.div`
   );
 `;
 
-export const AllList = styled.div``;
-
 export const Application2 = styled.div`
   margin: auto 0;
   z-index: 100;

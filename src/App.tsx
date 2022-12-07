@@ -16,17 +16,19 @@ const App = () => {
   return (
     <Styles.Container>
       <div>Page here</div>
-      <Styles.HeaderLogo className="wrapper">
-        <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
-      </Styles.HeaderLogo>
-      <Styles.Fond>
-        <Styles.CloudBackground>
-          <CloudImage image="./cloud.png" />
-        </Styles.CloudBackground>
-        <div>
-          <HeaderBackground />
-        </div>
-      </Styles.Fond>
+      <Styles.HeaderContainer>
+        <Styles.Fond>
+          <Styles.HeaderLogo className="wrapper">
+            <Header image="./salem.png" contacts={CONTACTS_ITEMS} />
+          </Styles.HeaderLogo>
+          <Styles.CloudBackground>
+            <CloudImage image="./group_cloud.png" />
+          </Styles.CloudBackground>
+          <div>
+            <HeaderBackground />
+          </div>
+        </Styles.Fond>
+      </Styles.HeaderContainer>
       <Styles.UsBenefits className="wrapper">
         <AboutUs usAdvantages={USADVANTAGES_ITEMS} />
       </Styles.UsBenefits>

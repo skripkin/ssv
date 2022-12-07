@@ -2,8 +2,15 @@ import styled from 'styled-components';
 import UsMapContacts from './components/usMapContacts';
 
 export const Container = styled.div`
-  height: 100vh;
   width: 100%;
+`;
+
+export const HeaderContainer = styled.div`
+  position: relative;
+`;
+
+export const Fond = styled.div`
+  height: 100%;
 `;
 
 export const HeaderLogo = styled.div`
@@ -15,16 +22,12 @@ export const HeaderLogo = styled.div`
   }
 `;
 
-export const Fond = styled.div`
-  margin-top: -90px;
-  position: relative;
-`;
-
 export const CloudBackground = styled.div`
   position: absolute;
-  margin-top: 200px;
   z-index: 20;
   width: 100%;
+  bottom: -50px;
+  overflow: hidden;
 `;
 
 export const UsBenefits = styled.div`

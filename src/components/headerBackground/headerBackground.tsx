@@ -4,7 +4,6 @@ import {
   Container,
   Gradient,
   Tanya,
-  AllList,
   Application2,
   Leftlist,
   RightList,
@@ -17,12 +16,10 @@ function HeaderBackground() {
     <Container>
       <Gradient />
       <Tanya src="../Tanya.svg" alt="Alt" />
-      <AllList>
-        <Leftlist src="../LeftList.svg" alt="Alt" />
-        <RightList src="../RightList.svg" alt="Alt" />
-        <LeftListYellow src="../LeftListYellow.svg" alt="Alt" />
-        <RightListYellow src="../RightListYellow.svg" alt="Alt" />
-      </AllList>
+      <Leftlist src="../LeftList.svg" alt="Alt" />
+      <RightList src="../RightList.svg" alt="Alt" />
+      <LeftListYellow src="../LeftListYellow.svg" alt="Alt" />
+      <RightListYellow src="../RightListYellow.svg" alt="Alt" />
       <Application2>
         <Application
           h1="Проект “Английский центр”"
