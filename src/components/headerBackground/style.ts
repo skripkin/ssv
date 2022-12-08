@@ -28,6 +28,9 @@ export const Gradient = styled.div`
 export const Application2 = styled.div`
   margin: auto 0;
   z-index: 100;
+  @media (max-width: 1153px) {
+    padding: 0 12px;
+  }
 `;
 
 export const Tanya = styled.img`
@@ -36,6 +39,21 @@ export const Tanya = styled.img`
   width: 470px;
   right: 250px;
   top: 90px;
+  @media (max-width: 1555px) {
+    transform: scale(0.8);
+    top: 100px;
+  }
+  @media (max-width: 1466px) {
+    transform: scale(0.7);
+    top: 170px;
+  }
+  @media (max-width: 1405px) {
+    transform: scale(0.6);
+    top: 200px;
+  }
+  @media (max-width: 1225px) {
+    display: none;
+  }
 `;
 
 export const Leftlist = styled.img`
@@ -50,6 +68,10 @@ export const RightList = styled.img`
   width: 275px;
   top: 440px;
   right: 60px;
+  @media (max-width: 1123px) {
+    right: 0;
+    top: 450px;
+  }
 `;
 
 export const LeftListYellow = styled.img`
@@ -70,4 +92,10 @@ export const RightListYellow = styled.img`
   bottom: -105px;
   transform: rotate(-90deg);
   opacity: 0.8;
+  @media (max-width: 1123px) {
+    right: 0;
+    width: 150px;
+    right: 50px;
+    bottom: -80px;
+  }
 `;

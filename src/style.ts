@@ -12,6 +12,12 @@ export const HeaderContainer = styled.div`
 export const Fond = styled.div`
   height: 100%;
   margin-top: -90px;
+  @media (max-width: 830px) {
+    margin-top: -100px;
+  }
+  @media (max-width: 825px) {
+    margin-top: -130px;
+  }
 `;
 
 export const HeaderLogo = styled.div`
@@ -22,13 +28,19 @@ export const HeaderLogo = styled.div`
   svg {
     fill: white;
   }
+  @media (max-width: 830px) {
+    top: 100px;
+  }
+  @media (max-width: 825px) {
+    top: 130px;
+  }
 `;
 
 export const CloudBackground = styled.div`
   position: absolute;
   z-index: 20;
   width: 100%;
-  bottom: -50px;
+  bottom: -70px;
   overflow: hidden;
 `;
 
