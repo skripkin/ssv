@@ -12,11 +12,6 @@ export const Case = styled.div`
   @media (max-width: 551px) {
     margin-top: 30px;
   }
-  @media (max-width: 562px) {
-    .nth-child(4n) {
-      margin-left: -30px;
-    }
-  }
 `;
 
 export const Image = styled.img`
