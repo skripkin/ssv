@@ -15,6 +15,10 @@ export const Container = styled.div`
   margin: 0 10px;
   width: 247px;
   height: 282px;
+
+  @media (max-width: 1220px) {
+    margin: 10px 10px;
+  }
 `;
 
 export const Title = styled.p`

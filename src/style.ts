@@ -54,6 +54,10 @@ export const CardsStep = styled.div`
   align-items: center;
   padding: 0 20px;
   margin: 74px auto 100px;
+
+  @media (max-width: 1220px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const OurReview = styled.div`
