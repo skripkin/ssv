@@ -7,6 +7,11 @@ export const Container = styled.div`
   height: 500px;
   background: ${colors.white};
   box-shadow: 4px -4px 10px rgba(0, 0, 0, 0.5);
+
+  @media (max-width: 468px) {
+    width: 100%;
+    height: 410px;
+  }
 `;
 
 export const Components = styled.div`
@@ -25,6 +30,14 @@ export const Contact = styled.div`
   height: 50px;
   padding-bottom: 20px;
 
+  
+  @media (max-width: 468px) {
+    justify-content: center;
+    margin-left: 0;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
   color: ${colors.black};
 
   & .us-map-contact-title {
@@ -34,6 +47,11 @@ export const Contact = styled.div`
     font-size: 18px;
     line-height: 21px;
     color: ${colors.black};
+
+    
+  @media (max-width: 468px) {
+    display: none;
+  }
   }
 
   & .us-map-contact-subtitle {
@@ -44,6 +62,10 @@ export const Contact = styled.div`
     line-height: 21px;
     color: ${colors.black}
     width: 300px;
+    
+  @media (max-width: 468px) {
+    display: none;
+  }
   }
 `;
 
@@ -58,6 +80,12 @@ export const Button1 = styled.button`
   border: 2px solid black;
   border-radius: 40px;
   background-color: ${colors.white};
+
+  @media (max-width: 468px) {
+    justify-content: center;
+    width: 75%;
+    margin-top: 15px;
+  }
 `;
 
 export const Button2 = styled.button`
@@ -70,6 +98,12 @@ export const Button2 = styled.button`
   height: 47px;
   background: ${colors.internationalOrange};
   border-radius: 53px;
+
+  @media (max-width: 468px) {
+    justify-content: center;
+    width: 75%;
+    margin-top: 15px;
+  }
 `;
 
 export const Title = styled.p`
@@ -84,6 +118,13 @@ export const Title = styled.p`
   line-height: 21px;
   color: ${colors.black};
   padding-bottom: 20px;
+
+  @media (max-width: 468px) {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+  }
 `;
 
 export const ContactUsButtonTitle = styled.p`
@@ -96,6 +137,10 @@ export const ContactUsButtonTitle = styled.p`
   font-size: 20px;
   line-height: 104.41%;
   color: ${colors.black};
+
+  @media (max-width: 468px) {
+    display: none;
+  }
 `;
 
 export const FindUsButtonTitle = styled.p`
@@ -108,12 +153,20 @@ export const FindUsButtonTitle = styled.p`
   font-size: 20px;
   line-height: 104.41%;
   color: ${colors.black};
+
+  @media (max-width: 468px) {
+    display: none;
+  }
 `;
 
 export const Arrow = styled(Icon.Arrow2)`
   width: 20px;
   hight: 25px;
   margin-right: 4px;
+
+  @media (max-width: 468px) {
+    display: none;
+  }
 `;
 
 export const Watsapp = styled(Icon.Watsapp)`

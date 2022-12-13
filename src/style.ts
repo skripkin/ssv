@@ -54,6 +54,7 @@ export const CardsStep = styled.div`
   align-items: center;
   padding: 0 20px;
   margin: 74px auto 100px;
+  box-sizing: border-box;
 `;
 
 export const OurReview = styled.div`
@@ -104,4 +105,8 @@ export const UsMapContactsContainer = styled.div`
   margin-top: auto;
   margin-left: auto;
   margin-bottom: 23px;
+
+  @media (max-width: 468px) {
+    width: 100%;
+  }
 `;

@@ -26,22 +26,22 @@ const App = () => {
           <HeaderBackground />
         </div>
       </Styles.Fond>
-      <Styles.UsBenefits className="wrapper">
+      {/* <Styles.UsBenefits className="wrapper">
         <AboutUs usAdvantages={USADVANTAGES_ITEMS} />
-      </Styles.UsBenefits>
-      <div>
+      </Styles.UsBenefits> */}
+      {/* <div>
         <CenterImage
           title="О проекте «Английский центр»"
           subTitle="Обучение английскому языку на высоком уровне качества через курсы, разговорные клубы, ресурсный центр и общение с носителями английского языка"
         />
-      </div>
+      </div> */}
       <Styles.TextInTheMiddle>
         <div>
           <p>ЧТО НУЖНО СДЕЛАТЬ</p>
           ЧТОБЫ ПОПАСТЬ НА КУРСЫ
         </div>
       </Styles.TextInTheMiddle>
-      <Styles.CardsStep className="wrapper">
+      {/* <Styles.CardsStep className="wrapper">
         {STEPS.map((item, index) => (
           <Step
             key={`${item.title}-${index}`}
@@ -50,7 +50,7 @@ const App = () => {
             onClick={() => null}
           />
         ))}
-      </Styles.CardsStep>
+      </Styles.CardsStep> */}
       <Styles.OurReview>
         <div>Наши отзывы</div>
       </Styles.OurReview>
