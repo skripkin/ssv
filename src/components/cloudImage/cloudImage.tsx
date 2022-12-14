@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Container } from './styles';
+import { Image, Container, ContainerImg } from './styles';
 
 interface ICloudImageProps {
   image: string;
@@ -7,9 +7,11 @@ interface ICloudImageProps {
 
 const CloudImage = ({ image }: ICloudImageProps) => {
   return (
-    <Container>
-      <Image src={image} alt={'error'} />
-    </Container>
+    <ContainerImg>
+      <Container>
+        <Image src={image} alt={'error'} />
+      </Container>
+    </ContainerImg>
   );
 };
 

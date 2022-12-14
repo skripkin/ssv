@@ -51,7 +51,7 @@ export const Tanya = styled.img`
     transform: scale(0.6);
     top: 200px;
   }
-  @media (max-width: 1225px) {
+  @media (max-width: 1123px) {
     display: none;
   }
 `;
