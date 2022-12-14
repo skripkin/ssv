@@ -7,14 +7,11 @@ export const Components = styled.div`
   @media (max-width: 951px) {
     flex-wrap: wrap;
     padding: 0 12px;
-  }
-  @media (max-width: 900px) {
-    margin: 20px 30px;
+    margin: 24px 30px;
   }
   @media (max-width: 562px) {
     flex-direction: column;
     align-items: center;
-    margin: 20px auto;
   }
 `;
 

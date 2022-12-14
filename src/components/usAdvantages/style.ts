@@ -9,8 +9,8 @@ export const Case = styled.div`
   flex-direction: column;
   justify-content: center;
   background-position: center center;
-  @media (max-width: 551px) {
-    margin-top: 30px;
+  @media (max-width: 951px) {
+    margin-top: 24px;
   }
 `;
 
@@ -52,7 +52,6 @@ export const SubTitle = styled.div`
     padding-top: 0;
   }
   @media (max-width: 562px) {
-    margin: 0 auto;
     font-size: 20px;
     justify-content: center;
   }
