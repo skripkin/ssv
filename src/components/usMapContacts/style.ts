@@ -10,13 +10,17 @@ export const Container = styled.div`
 
   @media (max-width: 468px) {
     width: 100%;
-    height: 410px;
+    height: 270px;
   }
 `;
 
 export const Components = styled.div`
   align-items: center;
   white-space: nowrap;
+
+  @media (max-width: 468px) {
+    display: none;
+  }
 `;
 
 export const Contact = styled.div`
@@ -82,9 +86,9 @@ export const Button1 = styled.button`
   background-color: ${colors.white};
 
   @media (max-width: 468px) {
-    justify-content: center;
-    width: 75%;
-    margin-top: 15px;
+    justify-content: space-evenly;
+    margin: auto;
+    height: 65px;
   }
 `;
 
@@ -101,8 +105,9 @@ export const Button2 = styled.button`
 
   @media (max-width: 468px) {
     justify-content: center;
-    width: 75%;
-    margin-top: 15px;
+    margin: auto;
+    margin-top: 25px;
+    height: 65px;
   }
 `;
 
@@ -120,10 +125,25 @@ export const Title = styled.p`
   padding-bottom: 20px;
 
   @media (max-width: 468px) {
-    margin-left: 0;
-    width: 100%;
-    text-align: center;
-    padding-top: 15px;
+    display: none;
+  }
+`;
+
+export const Title2 = styled.p`
+  padding-top: 30px;
+  width: 100%;
+  height: 35.78px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 21px;
+  color: ${colors.black};
+  padding-bottom: 20px;
+
+  @media (min-width: 468px) {
+    display: none;
   }
 `;
 
@@ -140,6 +160,7 @@ export const ContactUsButtonTitle = styled.p`
 
   @media (max-width: 468px) {
     display: none;
+    margin: auto;
   }
 `;
 
@@ -161,7 +182,7 @@ export const FindUsButtonTitle = styled.p`
 
 export const Arrow = styled(Icon.Arrow2)`
   width: 20px;
-  hight: 25px;
+  height: 25px;
   margin-right: 4px;
 
   @media (max-width: 468px) {
@@ -171,17 +192,33 @@ export const Arrow = styled(Icon.Arrow2)`
 
 export const Watsapp = styled(Icon.Watsapp)`
   width: 30px;
-  hight: 30px;
+  height: 30px;
   margin-right: 4px;
+
+  @media (max-width: 468px) {
+    width: 45px;
+    height: 45px;
+  }
 `;
 
 export const Instagramm = styled(Icon.Instagramm)`
   width: 30px;
-  hight: 30px;
+  height: 30px;
+
+  @media (max-width: 468px) {
+    width: 45px;
+    height: 45px;
+  }
 `;
 
 export const Gis2 = styled(Icon.Gis2)`
   width: 60px;
-  hight: 25px;
+  height: 25px;
   padding-left: 12px;
+
+  @media (max-width: 468px) {
+    width: 104px;
+    height: 45px;
+    padding: unset;
+  }
 `;
