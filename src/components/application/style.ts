@@ -18,7 +18,7 @@ export const Content = styled.div`
 export const H1 = styled.h1`
   align-items: center;
   font-weight: 700;
-  font-size: calc(18px + 28 * (100vw / 1600));
+  font-size: 46px;
   line-height: 74px;
   text-transform: uppercase;
   height: 70px;
@@ -26,8 +26,14 @@ export const H1 = styled.h1`
   @media (max-width: 1123px) {
     text-align: center;
   }
+  @media (max-width: 741px) {
+    font-size: 40px;
+  }
+  @media (max-width: 649px) {
+    font-size: 30px;
+  }
   @media (max-width: 582px) {
-    font-size: calc(18px + (28 + 28 * 0.7) * ((100vw - 320px) / 1600));
+    font-size: 18px;
   }
 `;
 
