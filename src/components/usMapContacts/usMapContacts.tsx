@@ -11,7 +11,7 @@ import {
   Instagramm,
   Gis2,
   Title,
-  Title2,
+  ResponciveTitle,
   FindUsButtonTitle,
   ContactUsButtonTitle,
 } from './style';
@@ -21,7 +21,7 @@ interface IUsMapContactsProp {
   className?: string;
   onClick: () => void;
   title: string;
-  title2: string;
+  responciveTitle: string;
   contactUsButtonTitle: string;
   findUsButtonTitle: string;
 }
@@ -31,13 +31,13 @@ const UsMapContacts = ({
   className,
   onClick,
   title,
-  title2,
+  responciveTitle,
   contactUsButtonTitle,
   findUsButtonTitle,
 }: IUsMapContactsProp) => (
   <Container>
     <Title>{title}</Title>
-    <Title2>{title2}</Title2>
+    <ResponciveTitle>{responciveTitle}</ResponciveTitle>
     <Components>
       {contacts.map((item, index) => (
         <Contact className={className} key={`${item.title}-${index}`}>

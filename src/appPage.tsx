@@ -113,7 +113,7 @@ const AppPage = () => {
           contacts={USCONTACTS_ITEMS}
           onClick={() => null}
           title="Наши контакты"
-          title2="Ищите нас тут"
+          responciveTitle="Ищите нас тут"
           findUsButtonTitle="Задайте вопрос"
           contactUsButtonTitle="Найти нас здесь"
         />

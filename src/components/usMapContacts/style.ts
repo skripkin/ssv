@@ -8,7 +8,7 @@ export const Container = styled.div`
   background: ${colors.white};
   box-shadow: 4px -4px 10px rgba(0, 0, 0, 0.5);
 
-  @media (max-width: 468px) {
+  @media (max-width: 470px) {
     width: 100%;
     height: 270px;
   }
@@ -18,7 +18,7 @@ export const Components = styled.div`
   align-items: center;
   white-space: nowrap;
 
-  @media (max-width: 468px) {
+  @media (max-width: 470px) {
     display: none;
   }
 `;
@@ -35,7 +35,7 @@ export const Contact = styled.div`
   padding-bottom: 20px;
 
   
-  @media (max-width: 468px) {
+  @media (max-width: 470px) {
     justify-content: center;
     margin-left: 0;
     width: 100%;
@@ -53,7 +53,7 @@ export const Contact = styled.div`
     color: ${colors.black};
 
     
-  @media (max-width: 468px) {
+  @media (max-width: 470px) {
     display: none;
   }
   }
@@ -67,7 +67,7 @@ export const Contact = styled.div`
     color: ${colors.black}
     width: 300px;
     
-  @media (max-width: 468px) {
+  @media (max-width: 470px) {
     display: none;
   }
   }
@@ -85,10 +85,11 @@ export const Button1 = styled.button`
   border-radius: 40px;
   background-color: ${colors.white};
 
-  @media (max-width: 468px) {
+  @media (max-width: 470px) {
     justify-content: space-evenly;
     margin: auto;
     height: 65px;
+    width: 80%;
   }
 `;
 
@@ -103,19 +104,20 @@ export const Button2 = styled.button`
   background: ${colors.internationalOrange};
   border-radius: 53px;
 
-  @media (max-width: 468px) {
+  @media (max-width: 470px) {
     justify-content: center;
     margin: auto;
     margin-top: 25px;
     height: 65px;
+    width: 80%;
   }
 `;
 
 export const Title = styled.p`
   margin-left: 50px;
   padding-top: 30px;
-  width: 238.31px;
-  height: 35.78px;
+  width: 240px;
+  height: 36px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -124,15 +126,15 @@ export const Title = styled.p`
   color: ${colors.black};
   padding-bottom: 20px;
 
-  @media (max-width: 468px) {
+  @media (max-width: 470px) {
     display: none;
   }
 `;
 
-export const Title2 = styled.p`
+export const ResponciveTitle = styled.p`
   padding-top: 30px;
   width: 100%;
-  height: 35.78px;
+  height: 36px;
   text-align: center;
   font-family: 'Roboto';
   font-style: normal;
@@ -142,7 +144,7 @@ export const Title2 = styled.p`
   color: ${colors.black};
   padding-bottom: 20px;
 
-  @media (min-width: 468px) {
+  @media (min-width: 470px) {
     display: none;
   }
 `;
@@ -155,10 +157,10 @@ export const ContactUsButtonTitle = styled.p`
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 104.41%;
+  line-height: 105%;
   color: ${colors.black};
 
-  @media (max-width: 468px) {
+  @media (max-width: 470px) {
     display: none;
     margin: auto;
   }
@@ -172,10 +174,10 @@ export const FindUsButtonTitle = styled.p`
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 104.41%;
+  line-height: 105%;
   color: ${colors.black};
 
-  @media (max-width: 468px) {
+  @media (max-width: 470px) {
     display: none;
   }
 `;
@@ -185,7 +187,7 @@ export const Arrow = styled(Icon.Arrow2)`
   height: 25px;
   margin-right: 4px;
 
-  @media (max-width: 468px) {
+  @media (max-width: 470px) {
     display: none;
   }
 `;
@@ -195,7 +197,7 @@ export const Watsapp = styled(Icon.Watsapp)`
   height: 30px;
   margin-right: 4px;
 
-  @media (max-width: 468px) {
+  @media (max-width: 470px) {
     width: 45px;
     height: 45px;
   }
@@ -205,7 +207,7 @@ export const Instagramm = styled(Icon.Instagramm)`
   width: 30px;
   height: 30px;
 
-  @media (max-width: 468px) {
+  @media (max-width: 470px) {
     width: 45px;
     height: 45px;
   }
@@ -216,7 +218,7 @@ export const Gis2 = styled(Icon.Gis2)`
   height: 25px;
   padding-left: 12px;
 
-  @media (max-width: 468px) {
+  @media (max-width: 470px) {
     width: 104px;
     height: 45px;
     padding: unset;
