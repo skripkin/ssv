@@ -61,11 +61,11 @@ export const OurReview = styled.div`
   font-size: 48px;
   line-height: 56px;
   text-align: center;
-  margin: 50px auto 90px;
+  margin: 50px auto 60px;
 `;
 
 export const SliderSlide = styled.div`
-  margin: 40px auto 64px;
+  margin: 0 auto 64px;
   width: 100%;
 `;
 
