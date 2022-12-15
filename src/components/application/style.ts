@@ -18,14 +18,16 @@ export const Content = styled.div`
 export const H1 = styled.h1`
   align-items: center;
   font-weight: 700;
-  font-size: 46px;
+  font-size: calc(18px + 28 * (100vw / 1600));
   line-height: 74px;
   text-transform: uppercase;
   height: 70px;
   margin: auto;
   @media (max-width: 1123px) {
-    font-size: 33px;
     text-align: center;
+  }
+  @media (max-width: 582px) {
+    font-size: calc(18px + (28 + 28 * 0.7) * ((100vw - 320px) / 1600));
   }
 `;
 
@@ -41,6 +43,11 @@ export const Text = styled.div`
     margin: 0 auto 30px;
     font-size: 20px;
     width: 500px;
+  }
+  @media (max-width: 582px) {
+    font-size: 18px;
+    text-align: center;
+    width: 300px;
   }
 `;
 
@@ -62,7 +69,12 @@ export const ContainerBtn = styled.div`
   }
 `;
 
-export const ContainerBtn2 = styled.div``;
+export const ContainerBtn2 = styled.div`
+  @media (max-width: 558px) {
+    width: 300px;
+    font-size: 25px;
+  }
+`;
 
 export const Image = styled.img`
   position: absolute;
@@ -91,6 +103,11 @@ export const ApplicationButton = styled(Button)`
     margin: 30px 0;
     font-size: 38px;
   }
+  @media (max-width: 582px) {
+    font-size: 18px;
+    text-align: center;
+    width: 300px;
+  }
 `;
 
 export const RoundButton = styled.button`
@@ -112,6 +129,9 @@ export const RoundButton = styled.button`
     text-align: left;
     @media (max-width: 1123px) {
       font-size: 25px;
+    }
+    @media (max-width: 582px) {
+      font-size: 18px;
     }
   }
   p {
@@ -139,5 +159,8 @@ export const RoundButton = styled.button`
   @media (max-width: 1123px) {
     width: 500px;
     font-size: 38px;
+  }
+  @media (max-width: 582px) {
+    width: 300px;
   }
 `;
