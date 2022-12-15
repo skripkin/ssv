@@ -52,11 +52,14 @@ export const CardsStep = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
   margin: 74px auto 100px;
 
   @media (max-width: 1220px) {
     flex-wrap: wrap;
+  }
+
+  @media (max-width: 498px) {
+    padding: unset;
   }
 `;
 

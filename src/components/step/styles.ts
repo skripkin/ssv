@@ -20,6 +20,10 @@ export const Container = styled.div`
     margin: 10px 10px;
     width: 200px;
   }
+
+  @media (max-width: 498px) {
+    width: 100%;
+  }
 `;
 
 export const Title = styled.p`
