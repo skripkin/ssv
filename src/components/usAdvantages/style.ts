@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 import { colors } from 'src/constants';
 
-export const Container = styled.div`
-  display: flex;
-`;
+export const Container = styled.div``;
 
 export const Case = styled.div`
   display: flex;
@@ -11,11 +9,18 @@ export const Case = styled.div`
   flex-direction: column;
   justify-content: center;
   background-position: center center;
+  @media (max-width: 951px) {
+    margin-top: 24px;
+  }
 `;
 
 export const Image = styled.img`
   max-width: 100px;
-  display: block;
+  display: flex;
+  align-items: end;
+  @media (max-width: 562px) {
+    margin: 30px auto 0;
+  }
 `;
 
 export const Title = styled.p`
@@ -26,6 +31,13 @@ export const Title = styled.p`
   line-height: 21px;
   text-align: center;
   color: ${colors.black};
+  @media (max-width: 923px) {
+    margin: 10px auto;
+  }
+  @media (max-width: 562px) {
+    font-size: 22px;
+    align-items: center;
+  }
 `;
 
 export const SubTitle = styled.div`
@@ -36,4 +48,11 @@ export const SubTitle = styled.div`
   line-height: 21px;
   text-align: center;
   color: ${colors.black};
+  @media (max-width: 923px) {
+    padding-top: 0;
+  }
+  @media (max-width: 562px) {
+    font-size: 20px;
+    justify-content: center;
+  }
 `;

@@ -19,7 +19,7 @@ export const USADVANTAGES_ITEMS = [
   {
     title: 'ПРЕДОСТАВЛЯЮТСЯ',
     subTitle: 'Готовые методические пособия',
-    image: './magazines.png',
+    image: './books.png',
   },
   {
     title: 'ПРАКТИКА',
