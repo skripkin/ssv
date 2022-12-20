@@ -32,6 +32,7 @@ export const Title = styled.p`
   color: ${colors.black};
   @media (max-width: 1000px) {
     margin-top: 15px;
+    margin-bottom: 12px;
   }
 `;
 
