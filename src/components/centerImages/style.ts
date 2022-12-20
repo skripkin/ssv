@@ -4,7 +4,6 @@ import { colors } from 'src/constants';
 export const Box = styled.div`
   width: 100%;
   height: 600px;
-  padding: 5%;
   background: ${colors.Gallery};
 
   @media (max-width: 640px) {
@@ -59,6 +58,7 @@ export const ImageBox = styled.div`
 export const RightBox = styled.div`
   width: 50%;
   height: 100%;
+  padding-top: 30px;
 
   @media (max-width: 500px) {
     width: 100%;
@@ -68,8 +68,9 @@ export const RightBox = styled.div`
 
 export const FirstImage = styled.img`
   height: 500px;
-  bottom: -100px;
+  bottom: -80px;
   position: relative;
+  left: 30px;
 
   @media (max-width: 1050px) {
     width: 80%;
@@ -90,9 +91,9 @@ export const SecondImage = styled.img`
   height: 500px;
   right: 0;
   width: 440px;
+  top: 35px;
 
   @media (max-width: 1050px) {
-    top: 0;
     width: 80%;
   }
 
