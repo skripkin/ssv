@@ -15,7 +15,7 @@ export const Fond = styled.div`
   @media (max-width: 830px) {
     margin-top: -100px;
   }
-  @media (max-width: 825px) {
+  @media (max-width: 828px) {
     margin-top: -130px;
   }
 `;
@@ -31,7 +31,7 @@ export const HeaderLogo = styled.div`
   @media (max-width: 830px) {
     top: 100px;
   }
-  @media (max-width: 825px) {
+  @media (max-width: 828px) {
     top: 130px;
   }
 `;

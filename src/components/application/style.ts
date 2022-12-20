@@ -26,7 +26,7 @@ export const H1 = styled.h1`
   @media (max-width: 1123px) {
     text-align: center;
   }
-  @media (max-width: 741px) {
+  @media (max-width: 760px) {
     font-size: 40px;
   }
   @media (max-width: 649px) {
