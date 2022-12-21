@@ -9,7 +9,13 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  height: 350px;
+}
+
+@media (max-width: 1000px) {
+  .swiper-slide {
+    height: 550px;
+   }
 }
 
 .slideNext {
