@@ -1,12 +1,18 @@
 import React from 'react';
-import { Image } from './styles';
+import { Image, Container, ContainerImg } from './styles';
 
 interface ICloudImageProps {
   image: string;
 }
 
 const CloudImage = ({ image }: ICloudImageProps) => {
-  return <Image src={image} alt={'error'} />;
+  return (
+    <ContainerImg>
+      <Container>
+        <Image src={image} alt={'error'} />
+      </Container>
+    </ContainerImg>
+  );
 };
 
 export default CloudImage;

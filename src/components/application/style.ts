@@ -18,11 +18,23 @@ export const Content = styled.div`
 export const H1 = styled.h1`
   align-items: center;
   font-weight: 700;
-  font-size: xxx-large;
+  font-size: 46px;
   line-height: 74px;
   text-transform: uppercase;
   height: 70px;
   margin: auto;
+  @media (max-width: 1123px) {
+    text-align: center;
+  }
+  @media (max-width: 760px) {
+    font-size: 40px;
+  }
+  @media (max-width: 649px) {
+    font-size: 30px;
+  }
+  @media (max-width: 582px) {
+    font-size: 18px;
+  }
 `;
 
 export const Text = styled.div`
@@ -32,39 +44,83 @@ export const Text = styled.div`
   width: 50%;
   height: 97px;
   word-wrap: break-word;
+  @media (max-width: 1123px) {
+    text-align: center;
+    margin: 0 auto 30px;
+    font-size: 20px;
+    width: 500px;
+  }
+  @media (max-width: 582px) {
+    font-size: 18px;
+    text-align: center;
+    width: 300px;
+  }
+`;
+
+export const CaseBtn = styled.div`
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  position: relative;
+  @media (max-width: 1123px) {
+    align-items: center;
+    flex-direction: column;
+  }
 `;
 
 export const ContainerBtn = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: start;
+  padding-right: 23px;
+  @media (max-width: 1123px) {
+    padding-right: 0;
+  }
+`;
+
+export const ContainerBtn2 = styled.div`
+  @media (max-width: 558px) {
+    width: 300px;
+    font-size: 25px;
+  }
 `;
 
 export const Image = styled.img`
   position: absolute;
+  display: flex;
   width: 100px;
   height: 55px;
+  top: -50px;
   transform: matrix(1, -0.05, -0.2, 2, 10, 25);
   z-index: 2;
-  margin-top: -50px;
-  margin-left: 10px;
+  @media (max-width: 1123px) {
+    top: -20px;
+    margin-left: 23px;
+  }
 `;
 
 export const ApplicationButton = styled(Button)`
-  margin: 0 0 80px;
-  width: 25%;
+  width: 254px;
   height: 70px;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 1123px) {
+    width: 500px;
+    margin: 30px 0;
+    font-size: 38px;
+  }
+  @media (max-width: 582px) {
+    font-size: 18px;
+    text-align: center;
+    width: 300px;
+  }
 `;
 
 export const RoundButton = styled.button`
   position: relative;
   display: flex;
   padding: 10px;
-  width: 25%;
-  margin-left: 20px;
+  width: 254px;
   align-items: center;
   justify-content: center;
   height: 70px;
@@ -77,15 +133,25 @@ export const RoundButton = styled.button`
     font-size: 14px;
     line-height: 17px;
     text-align: left;
+    @media (max-width: 1123px) {
+      font-size: 25px;
+    }
+    @media (max-width: 582px) {
+      font-size: 18px;
+    }
   }
   p {
     font-weight: 400;
+    @media (max-width: 1123px) {
+      margin-bottom: 10px;
+    }
   }
 
   & > svg {
     position: absolute;
+    display: flex;
     padding: 18px 24px;
-    margin-right: 190px;
+    left: 10px;
     width: 13px;
     heigth: 13px;
     box-shadow: 0px 2px 2px ${colors.tiaMaria};
@@ -95,5 +161,12 @@ export const RoundButton = styled.button`
       ${colors.pizazz}
     );
     border-radius: 50%;
+  }
+  @media (max-width: 1123px) {
+    width: 500px;
+    font-size: 38px;
+  }
+  @media (max-width: 582px) {
+    width: 300px;
   }
 `;

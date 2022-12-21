@@ -15,6 +15,15 @@ export const Container = styled.div`
   margin: 0 10px;
   width: 247px;
   height: 282px;
+
+  @media (max-width: 1220px) {
+    margin: 10px 10px;
+    width: 200px;
+  }
+
+  @media (max-width: 498px) {
+    width: 100%;
+  }
 `;
 
 export const Title = styled.p`
