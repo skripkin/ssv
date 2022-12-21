@@ -4,6 +4,10 @@ import { colors } from 'src/constants';
 export const Container = styled.div`
   display: flex;
   align-items: center;
+
+  @media (max-width: 468px) {
+    justify-content: center;
+  }
 `;
 
 export const Icon = styled.div`
