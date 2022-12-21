@@ -58,7 +58,6 @@ export const ImageBox = styled.div`
 export const RightBox = styled.div`
   width: 50%;
   height: 100%;
-  padding-top: 30px;
 
   @media (max-width: 500px) {
     width: 100%;
@@ -117,7 +116,7 @@ export const Title = styled.div`
   font-weight: 700;
   font-size: 60px;
   width: 80%;
-  margin-top: 25px;
+  margin-top: 80px;
   margin-left: 50px;
 
   @media (max-width: 2500px) {
@@ -161,7 +160,7 @@ export const SubTitle = styled.div`
   font-weight: 500;
   font-size: 36px;
   width: 80%;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: 50px;
 
   @media (max-width: 2500px) {
