@@ -29,7 +29,7 @@ export const H1 = styled.h1`
   @media (max-width: 760px) {
     font-size: 40px;
   }
-  @media (max-width: 649px) {
+  @media (max-width: 657px) {
     font-size: 30px;
   }
   @media (max-width: 582px) {
