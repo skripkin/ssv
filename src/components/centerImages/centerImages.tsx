@@ -1,11 +1,14 @@
 import React from 'react';
 import {
   Container,
-  Component,
+  RightBox,
   FirstImage,
   SecondImage,
   Title,
   SubTitle,
+  LeftBox,
+  ImageBox,
+  Box,
 } from './style';
 
 interface ICenterImageProp {
@@ -15,16 +18,20 @@ interface ICenterImageProp {
 
 const CenterImage = ({ title, subTitle }: ICenterImageProp) => {
   return (
-    <Container>
-      <div style={{ position: 'relative' }}>
-        <FirstImage src="./image8.svg" alt={'Alt'} />
-        <SecondImage src="./image81.svg" alt={'Alt'} />
-      </div>
-      <Component>
-        <Title>{title}</Title>
-        <SubTitle>{subTitle}</SubTitle>
-      </Component>
-    </Container>
+    <Box>
+      <Container>
+        <LeftBox>
+          <ImageBox>
+            <FirstImage src="./image8.svg" alt={'Alt'} />
+            <SecondImage src="./image81.svg" alt={'Alt'} />
+          </ImageBox>
+        </LeftBox>
+        <RightBox>
+          <Title>{title}</Title>
+          <SubTitle>{subTitle}</SubTitle>
+        </RightBox>
+      </Container>
+    </Box>
   );
 };
 
