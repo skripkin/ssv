@@ -73,29 +73,3 @@ export const RightList = styled.img`
     top: 450px;
   }
 `;
-
-export const LeftListYellow = styled.img`
-  position: absolute;
-  z-index: 1;
-  width: 129px;
-  left: 0;
-  top: 3px;
-  transform: rotate(-2deg);
-  opacity: 0.8;
-`;
-
-export const RightListYellow = styled.img`
-  position: absolute;
-  z-index: 2;
-  width: 200px;
-  right: 110px;
-  bottom: -105px;
-  transform: rotate(-90deg);
-  opacity: 0.8;
-  @media (max-width: 1123px) {
-    right: 0;
-    width: 150px;
-    right: 50px;
-    bottom: -80px;
-  }
-`;
