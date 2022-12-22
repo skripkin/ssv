@@ -22,7 +22,7 @@ const CenterImage = ({ title, subTitle }: ICenterImageProp) => {
       <Container>
         <LeftBox>
           <ImageBox>
-            <FirstImage src="./image8.svg" alt={'Alt'} />
+            <FirstImage src="./Card.png" alt={'Alt'} />
             <SecondImage src="./image81.svg" alt={'Alt'} />
           </ImageBox>
         </LeftBox>
