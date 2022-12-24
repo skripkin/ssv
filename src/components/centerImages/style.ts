@@ -14,6 +14,10 @@ export const Box = styled.div`
     height: 530px;
   }
 
+  @media (max-width: 702px) {
+    height: 460px;
+  }
+
   @media (max-width: 600px) {
     height: 420px;
   }
@@ -46,12 +50,14 @@ export const LeftBox = styled.div`
     padding-right: 20px;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 702px) {
     padding-right: 0;
+    align-items: center;
   }
 
   @media (max-width: 500px) {
     width: 100%;
+    align-items: center;
   }
 `;
 
@@ -60,7 +66,8 @@ export const ImageBox = styled.div`
   display: flex;
   position: relative;
 
-  @media (max-width: 1050px) {
+  @media (max-width: 702px) {
+    height: 100%;
   }
 
   @media (max-width: 500px) {
@@ -96,17 +103,18 @@ export const FirstImage = styled.img`
     margin-right: 20px;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 702px) {
     display: none;
+    bottom: 0;
   }
 `;
 
 export const SecondImage = styled.img`
-  @media (min-width: 700px) {
+  @media (min-width: 702px) {
     display: none;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 702px) {
     height: 360px;
     margin-top: 50px;
   }
