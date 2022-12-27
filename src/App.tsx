@@ -69,6 +69,7 @@ const App = () => {
               contacts={CONTACTS_ITEMS}
               onClick={() => null}
               title="Наши контакты"
+              responciveTitle="Ищите нас тут"
               findUsButtonTitle="Задайте вопрос"
               contactUsButtonTitle="Найти нас здесь"
             />

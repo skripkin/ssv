@@ -132,4 +132,8 @@ export const UsMapContactsContainer = styled.div`
   margin-top: auto;
   margin-left: auto;
   margin-bottom: 23px;
+
+  @media (max-width: 470px) {
+    width: 100%;
+  }
 `;
