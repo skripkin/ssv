@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Title, SubTitle, Icon } from './style';
 
 export interface IContactsProp {
+  link?: string;
   icon: React.ReactNode;
   title: string;
   subTitle: string;

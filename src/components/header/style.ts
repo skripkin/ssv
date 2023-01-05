@@ -45,4 +45,7 @@ export const Components = styled.div`
 
 export const Contact = styled.div`
   margin-left: 25px;
+  .link {
+    text-decoration: none;
+  }
 `;
