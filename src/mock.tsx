@@ -33,6 +33,7 @@ export const CONTACTS_ITEMS = [
     icon: <Icon.Phone />,
     title: '+77252318732',
     subTitle: '+77053715041',
+    link: 'tel: link',
   },
   {
     icon: <Icon.Location />,
