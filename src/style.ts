@@ -91,6 +91,10 @@ export const OurReview = styled.div`
 export const SliderSlide = styled.div`
   margin: 0 auto 64px;
   width: 100%;
+  @media (max-width: 1143px) {
+    padding: 0 12px;
+    margin: 0 auto;
+  }
 `;
 
 export const LeaveFeedbackButton = styled.div`

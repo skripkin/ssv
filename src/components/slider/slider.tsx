@@ -67,12 +67,22 @@ const Slider = () => {
             />
           </div>
         </SwiperSlide>
-        <button className="slidePrev" ref={navPrevRef} onClick={() => goPrev()}>
-          <Arrow2 />
-        </button>
-        <button className="slideNext" ref={navNextRef} onClick={() => goNext()}>
-          <Arrow2 />
-        </button>
+        <div className="container-btn">
+          <button
+            className="slidePrev"
+            ref={navPrevRef}
+            onClick={() => goPrev()}
+          >
+            <Arrow2 />
+          </button>
+          <button
+            className="slideNext"
+            ref={navNextRef}
+            onClick={() => goNext()}
+          >
+            <Arrow2 />
+          </button>
+        </div>
       </Swiper>
     </div>
   );
