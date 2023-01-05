@@ -26,14 +26,22 @@ export const H1 = styled.h1`
   @media (max-width: 1123px) {
     text-align: center;
   }
-  @media (max-width: 760px) {
+  @media (max-width: 768px) {
     font-size: 40px;
   }
-  @media (max-width: 649px) {
+  @media (max-width: 673px) {
     font-size: 30px;
   }
   @media (max-width: 582px) {
-    font-size: 18px;
+    font-size: 24px;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 16px;
   }
 `;
 
@@ -54,6 +62,10 @@ export const Text = styled.div`
     font-size: 18px;
     text-align: center;
     width: 300px;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 14px;
   }
 `;
 
