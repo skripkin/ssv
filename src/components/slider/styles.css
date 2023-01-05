@@ -62,12 +62,12 @@
 
 .slideNext {
   top: 50%;
-  right: -30px;
+  right: -29px;
 }
 
 @media (max-width: 1145px) {
   .slideNext {
-    right: -20px;
+    right: -19px;
    }
 }
 
@@ -75,6 +75,12 @@
   top: 40%;
   left: 0;
   transform: scale(-1, 1);
+}
+
+@media (max-width: 2000px) {
+  .slidePrev {
+    left: 3px;
+   }
 }
 
 @media (max-width: 1000px) {
