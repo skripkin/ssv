@@ -6,7 +6,7 @@ interface IIconProp {
   props?: any;
 }
 
-const Arrow = ({ className, props }: IIconProp) => {
+const Watsupp = ({ className, props }: IIconProp) => {
   return (
     <IconSvg
       xmlns="http://www.w3.org/2000/svg"
@@ -22,4 +22,4 @@ const Arrow = ({ className, props }: IIconProp) => {
   );
 };
 
-export default Arrow;
+export default Watsupp;
