@@ -6,11 +6,16 @@ import {
   Contact,
   Button1,
   Button2,
-  Arrow,
-  Watsapp,
+  Button3,
+  WatsApp,
   Instagramm,
   Gis2,
   Title,
+  B1Title,
+  ButtonBox,
+  ButtonLink1,
+  ButtonLink2,
+  ButtonLink3,
   ResponciveTitle,
   FindUsButtonTitle,
   ContactUsButtonTitle,
@@ -51,17 +56,26 @@ const UsMapContacts = ({
         </Contact>
       ))}
     </Components>
-    <Button1 onClick={onClick}>
-      <ContactUsButtonTitle>{contactUsButtonTitle}</ContactUsButtonTitle>
-      <Arrow />
-      <Watsapp />
-      <Instagramm />
-    </Button1>
-    <Button2>
-      <FindUsButtonTitle>{findUsButtonTitle}</FindUsButtonTitle>
-      <Arrow />
-      <Gis2 />
-    </Button2>
+    <ContactUsButtonTitle>{contactUsButtonTitle}</ContactUsButtonTitle>
+    <ButtonBox>
+      <ButtonLink1 href="https://wa.me/+77478098082?text=Здравствуйте%2C+у+меня+есть+вопрос">
+        <Button1 onClick={onClick}>
+          <B1Title></B1Title>
+          <WatsApp />
+        </Button1>
+      </ButtonLink1>
+      <ButtonLink2 href="https://www.instagram.com">
+        <Button2>
+          <Instagramm />
+        </Button2>
+      </ButtonLink2>
+    </ButtonBox>
+    <ButtonLink3 href="https://go.2gis.com/3iwgk">
+      <Button3>
+        <FindUsButtonTitle>{findUsButtonTitle}</FindUsButtonTitle>
+        <Gis2 />
+      </Button3>
+    </ButtonLink3>
   </Container>
 );
 

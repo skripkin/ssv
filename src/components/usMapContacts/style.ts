@@ -10,7 +10,7 @@ export const Container = styled.div`
 
   @media (max-width: 470px) {
     width: 100%;
-    height: 270px;
+    height: 310px;
   }
 `;
 
@@ -76,40 +76,52 @@ export const Contact = styled.div`
 export const Button1 = styled.button`
   display: flex;
   align-items: center;
-  margin-left: 30px;
-  margin-top: 30px;
-  padding: 12px 20px;
   height: 46px;
-  width: 290px;
+  width: 130px;
   border: 2px solid black;
   border-radius: 40px;
-  background-color: ${colors.white};
+  margin-right: 12px;
+  background: ${colors.white};
 
-  @media (max-width: 470px) {
-    justify-content: space-evenly;
+    @media (max-width: 470px) {
+    justify-content: center;
     margin: auto;
-    height: 65px;
-    width: 80%;
-  }
+    width: 70%;
 `;
 
 export const Button2 = styled.button`
   display: flex;
   align-items: center;
-  margin-left: 30px;
-  margin-top: 45px;
+  height: 46px;
+  width: 130px;
+  border: 2px solid black;
+  border-radius: 40px;
+  margin-left: 12px;
+  background: ${colors.white};
+
+    @media (max-width: 470px) {
+    justify-content: center;
+    margin: auto;
+    margin-top: 25px;
+    width: 70%;
+`;
+
+export const Button3 = styled.button`
+  display: flex;
+  align-items: center;
   padding: 12px 20px;
+  margin: auto;
   width: 290px;
   height: 47px;
   background: ${colors.internationalOrange};
   border-radius: 53px;
+  border: 2px solid black;
 
   @media (max-width: 470px) {
     justify-content: center;
     margin: auto;
     margin-top: 25px;
-    height: 65px;
-    width: 80%;
+    width: 70%;
   }
 `;
 
@@ -150,19 +162,17 @@ export const ResponciveTitle = styled.p`
 `;
 
 export const ContactUsButtonTitle = styled.p`
-  height: 22px;
-  width: 150px;
-  margin-right: auto;
-  font-family: 'Fasthand';
+  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 105%;
-  color: ${colors.black};
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 21px;
+  text-align: center;
+  margin-top: 10px;
+  }
 
   @media (max-width: 470px) {
     display: none;
-    margin: auto;
   }
 `;
 
@@ -182,40 +192,67 @@ export const FindUsButtonTitle = styled.p`
   }
 `;
 
-export const Arrow = styled(Icon.Arrow2)`
-  width: 20px;
-  height: 25px;
-  margin-right: 4px;
+export const ButtonBox = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
 
   @media (max-width: 470px) {
+    display: unset;
+  }
+`;
+
+export const WatsApp = styled(Icon.Watsapp)`
+  width: 35px;
+  height: 35px;
+  margin: auto;
+  @media (max-width: 470px) {
+    width: 40px;
+    height: 40px;
+  }
+`;
+
+export const ButtonLink1 = styled.a`
+  text-decoration: none;
+
+  @media (min-width: 470px) {
     display: none;
   }
 `;
 
-export const Watsapp = styled(Icon.Watsapp)`
-  width: 30px;
-  height: 30px;
-  margin-right: 4px;
+export const B1Title = styled.p``;
 
-  @media (max-width: 470px) {
-    width: 45px;
-    height: 45px;
+export const ButtonLink2 = styled.a`
+  text-decoration: none;
+
+  @media (min-width: 470px) {
+    display: none;
+  }
+`;
+
+export const ButtonLink3 = styled.a`
+  text-decoration: none;
+
+  @media (min-width: 470px) {
+    display: none;
   }
 `;
 
 export const Instagramm = styled(Icon.Instagramm)`
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
+  margin: auto;
 
   @media (max-width: 470px) {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
 `;
 
 export const Gis2 = styled(Icon.Gis2)`
-  width: 60px;
-  height: 25px;
+  width: 80px;
+  height: 35px;
   padding-left: 12px;
 
   @media (max-width: 470px) {
